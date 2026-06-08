@@ -27,8 +27,20 @@ print("total trades: " , total_trades)
 for trade in trades:
     total_trades += trade["profit"]
 
+    # for empty file error handling
+    if total_trades == 0:
+        print("no trades found")
+
+
+
     if trade["profit"] > 0:
         winning_trades += 1
     else:
         losing_trades += 1
+
+# calculating win rate
+win_rate = (winning_trades/total_trades) * 100
+
+#calculating average profit
+average_profit = (total_profit/total_trades)
 
