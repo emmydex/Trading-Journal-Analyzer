@@ -3,24 +3,27 @@ import csv
 
 trades = []
 
-    # this opens and read file inside journal.csv
+# this opens and read file inside journal.csv
 with open("journal.csv" , "r") as file:
-        reader = csv.DictReader(file)
+    reader = csv.DictReader(file)
 
-        for row in reader:
+        # reading profit value in row and appending it to trades
+    for row in reader:
         # here i converted to float data type for calculation
-            row["profit"] = float(row["profit"])
+        row["profit"] = float(row["profit"])
         trades.append(row)
         
 
-    # counting of total trades
+ # counting of total trades
 total_trades = len(trades)
 
+
+# naming variables
 winning_trades = 0 
 losing_trades = 0
 total_profit = 0
 
-    # reading profit value in row and appending it to trades
+    
 
 
 
@@ -47,7 +50,7 @@ average_profit = (total_profit/total_trades)
 
 print("\n======================")
 print("Trading report")
-print("======================")
+print("======================\n")
 print("Total trades :", total_trades)
 print("Winning Trades:" , winning_trades)
 print("Losing Trades:", losing_trades)
