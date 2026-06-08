@@ -18,12 +18,14 @@ with open("journal.csv" , "r") as file:
 total_trades = len(trades)
 
 
+# for empty file error handling
+if total_trades == 0:
+    print("no trades found")
+
 # naming variables
 winning_trades = 0 
 losing_trades = 0
 total_profit = 0
-
-    
 
 
 
@@ -31,12 +33,7 @@ total_profit = 0
 for trade in trades:
         total_profit += trade["profit"]
 
-        # for empty file error handling
-        if total_trades == 0:
-            print("no trades found")
-
-
-
+        
         if trade["profit"] > 0:
             winning_trades += 1
         else:
@@ -49,11 +46,11 @@ win_rate = (winning_trades/total_trades) * 100
 average_profit = (total_profit/total_trades)
 
 print("\n======================")
-print("Trading report")
+print("   Trading report")
 print("======================\n")
 print("Total trades :", total_trades)
 print("Winning Trades:" , winning_trades)
 print("Losing Trades:", losing_trades)
 print("total profit: $" ,total_profit)
-print(f"\nwin rate: ${win_rate:.2f}")
-print("Average Profit: $", average_profit)
+print(f"win rate: ${win_rate:.1f}%")
+print(f"Average Profit: ${average_profit:.2f}")
