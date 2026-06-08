@@ -11,7 +11,7 @@ with open("journal.csv" , "r") as file:
         # here i converted to float data type for calculation
             row["profit"] = float(row["profit"])
         trades.append(row)
-        print("total trades: " , total_trades)
+        
 
     # counting of total trades
 total_trades = len(trades)
@@ -47,7 +47,10 @@ average_profit = (total_profit/total_trades)
 
 print("\n======================")
 print("Trading report")
-print("\n======================")
+print("======================")
 print("Total trades :", total_trades)
 print("Winning Trades:" , winning_trades)
 print("Losing Trades:", losing_trades)
+print("total profit: $" ,total_profit)
+print(f"\nwin rate: ${win_rate:.2f}")
+print("Average Profit: $", average_profit)
