@@ -56,6 +56,7 @@ win_rate = (winning_trades/total_trades) * 100
     #calculating average profit
 average_profit = (total_profit/total_trades)
 
+
 print("\n======================")
 print("   Trading report")
 print("======================\n")
