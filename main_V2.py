@@ -12,11 +12,22 @@ with open("journal.csv", "r") as file:
 total_trades = len(trades)
 print("total_trades:", total_trades)
 
-winnig_trades = 0
+# naming variables
+
+winning_trades = 0
 losing_trades = 0
 total_trades = 0
+total_profit = 0
 best_trade = [0]
 worst_trade = [0]
+
+# handlling a zero division error
+if total_trades > 0:
+    win_rate = (winning_trades / total_trades) * 100
+    average_profit = total_profit / total_trades
+else:
+    win_rate = 0
+    average_profit = 0
 
 for trade in trades:
     total_trades += trade["profit"]
@@ -32,6 +43,8 @@ for trade in trades:
 
     if trade["profit"] < worst_trade["profit"]:
         worst_trade = trade
-
+#  calculating win rate and average profit
 win_rate = (winning_trades / total_trades) * 100
-average_profit = total_trades / total_trades
+average_profit = (total_profit / total_trades)
+
+
