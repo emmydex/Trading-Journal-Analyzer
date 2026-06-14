@@ -26,8 +26,12 @@ for trade in trades:
     else:
         losing_trades += 1
 
+# added statements for best trades and worst trades
     if trade["profit"] > best_trade["profit"]:
         best_trade = trade
 
     if trade["profit"] < worst_trade["profit"]:
         worst_trade = trade
+
+win_rate = (winning_trades / total_trades) * 100
+average_profit = total_trades / total_trades
