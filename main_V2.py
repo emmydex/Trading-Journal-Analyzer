@@ -1,7 +1,10 @@
 import csv
 
-
+ # This script reads a CSV file named "journal.csv" containing trade data
+ 
 trades = []
+
+# The CSV file is expected to have a column named "profit" which contains the profit or loss for each trade.
 with open("journal.csv", "r") as file:
     reader = csv.DictReader(file)
 
@@ -26,7 +29,7 @@ best_trade = trades[0]
 worst_trade = trades[0]
 
 
-
+# Loop through each trade in the list of trades and calculate the total profit
 for trade in trades:
     total_profit += trade["profit"]
 
