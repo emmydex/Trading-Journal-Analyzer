@@ -47,15 +47,23 @@ for trade in trades:
     if trade["profit"] < worst_trade["profit"]:
         worst_trade = trade
 
-
+    # adds pair to the dictionary else if pair already exist in the dictionary it is added to the existing one
     pair = trade["pair"]
+    # is pair in the dictionary variable if not add to the dictionary
     if pair not in pair_counts:
         pair_counts[pair] = 1
     else:
+        # else add to existing 
         pair_counts[pair] += 1
 
+
+     # getting the first pair
     most_traded_pair = list(pair_counts.keys())[0]
+
+    #looping through the dictionary
     for pair in pair_counts:
+
+        # comparing counts
         if pair_counts[pair] > pair_counts[most_traded_pair]:
             most_traded_pair = pair
 
