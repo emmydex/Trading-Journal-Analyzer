@@ -47,11 +47,18 @@ for trade in trades:
     if trade["profit"] < worst_trade["profit"]:
         worst_trade = trade
 
+
     pair = trade["pair"]
     if pair not in pair_counts:
         pair_counts[pair] = 1
     else:
         pair_counts[pair] += 1
+
+    most_traded_pair = list(pair_counts.keys())[0]
+    for pair in pair_counts:
+        if pair_counts[pair] > pair_counts[most_traded_pair]:
+            most_traded_pair = pair
+
 #  calculating win rate and average profit
 win_rate = (winning_trades / total_trades) * 100
 average_profit = (total_profit / total_trades)
@@ -72,3 +79,6 @@ print(f"profit: ${best_trade['profit']:.2f}")
 print("\nworst trade: ")
 print("pair:", worst_trade["pair"])
 print(f"profit: ${worst_trade['profit']:.2f}")
+
+print("\nMost Traded pair:", most_traded_pair)
+print("Trades:", pair_counts[most_traded_pair])
