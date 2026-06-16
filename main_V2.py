@@ -28,6 +28,8 @@ total_profit = 0
 best_trade = trades[0]
 worst_trade = trades[0]
 
+# creating an empty dictionary for the variable
+pair_counts = {}
 
 # Loop through each trade in the list of trades and calculate the total profit
 for trade in trades:
@@ -44,6 +46,12 @@ for trade in trades:
 
     if trade["profit"] < worst_trade["profit"]:
         worst_trade = trade
+
+    pair = trade["pair"]
+    if pair not in pair_counts:
+        pair_counts[pair] = 1
+    else:
+        pair_counts[pair] += 1
 #  calculating win rate and average profit
 win_rate = (winning_trades / total_trades) * 100
 average_profit = (total_profit / total_trades)
