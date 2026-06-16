@@ -107,6 +107,31 @@ python main.py
 
 ---
 
+
+## VERSION RELEASED
+
+# Trading Journal Analyzer V1
+
+- CSV trade loading
+- Win/loss tracking
+- Profit calculations
+- Average profit
+- Win rate
+- Empty file handling
+
+
+# Trading Journal Analyzer V2
+
+- Best trade analysis
+- Worst trade analysis
+- Trade detail reporting
+- Pair normalization
+- Most traded pair analysis
+- Improved reporting
+
+
+
+
 ## Future Improvements
 
 ### Version 2
