@@ -9,6 +9,8 @@ with open("journal.csv", "r") as file:
     reader = csv.DictReader(file)
 
     for row in reader:
+        # to avoid python reading the pairs as diffrent keys i used the .upper() to capitalize all
+        row["pair"] = row["pair"].upper()
         row['profit']= float(row["profit"])
         trades.append(row)
 

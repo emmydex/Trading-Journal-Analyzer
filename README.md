@@ -134,7 +134,7 @@ python main.py
 - File Handling
 - Problem Solving
 - Financial Data Processing
-
+- data quality
 ---
 
 ## Author
