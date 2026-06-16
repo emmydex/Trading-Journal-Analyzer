@@ -134,20 +134,14 @@ python main.py
 
 ## Future Improvements
 
-### Version 2
+### Versions
 - Monthly performance reports
 - Best trade analysis
 - Worst trade analysis
 - Profit factor calculation
-
-### Version 3
 - Performance charts using Matplotlib
 - Equity curve visualization
-
-### Version 4
 - GUI using Tkinter
-
-### Version 5
 - AI-powered trading insights
 
 ---
