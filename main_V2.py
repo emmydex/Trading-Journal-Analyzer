@@ -11,6 +11,8 @@ with open("journal.csv", "r") as file:
     for row in reader:
         # to avoid python reading the pairs as diffrent keys i used the .upper() to capitalize all
         row["pair"] = row["pair"].upper()
+
+        # converting to a floating value
         row['profit']= float(row["profit"])
         trades.append(row)
 
