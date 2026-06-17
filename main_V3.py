@@ -48,7 +48,13 @@ for trade in trades:
     else:
         losing_trades += 1
 
-# added statements for best trades and worst trades
+    # if profit is positive
+    gross_profit += trade["profit"]
+
+    # if profit is negative using abs to get the absolute value instead of a negative value
+    gross_loss += abs(trade["profit"])
+
+    # added statements for best trades and worst trades
     if trade["profit"] > best_trade["profit"]:
         best_trade = trade
 
@@ -74,6 +80,10 @@ for trade in trades:
         # comparing counts
         if pair_counts[pair] > pair_counts[most_traded_pair]:
             most_traded_pair = pair
+
+
+# calculating the profit factor
+profit_factor = gross_profit / gross_loss
 
 #  calculating win rate and average profit
 win_rate = (winning_trades / total_trades) * 100
