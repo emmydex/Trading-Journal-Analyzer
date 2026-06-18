@@ -83,6 +83,7 @@ for trade in trades:
         if pair_counts[pair] > pair_counts[most_traded_pair]:
             most_traded_pair = pair
 
+# handling the divisible by zero error
 if gross_profit > 0 :
     profit_factor = gross_profit / gross_loss
 else:
