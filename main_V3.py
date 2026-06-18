@@ -49,10 +49,12 @@ for trade in trades:
         losing_trades += 1
 
     # if profit is positive
-    gross_profit += trade["profit"]
+    if trade["profit"] > 0:
+        gross_profit += trade["profit"]
 
     # if profit is negative using abs to get the absolute value instead of a negative value
-    gross_loss += abs(trade["profit"])
+    if trade["profit"] < 0:
+        gross_loss += abs(trade["profit"])
 
     # added statements for best trades and worst trades
     if trade["profit"] > best_trade["profit"]:
@@ -80,6 +82,11 @@ for trade in trades:
         # comparing counts
         if pair_counts[pair] > pair_counts[most_traded_pair]:
             most_traded_pair = pair
+
+if gross_profit > 0 :
+    profit_factor = gross_profit / gross_loss
+else:
+    profit_factor = 0
 
 
 # calculating the profit factor
