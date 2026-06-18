@@ -119,3 +119,8 @@ print(f"profit: ${worst_trade['profit']:.2f}")
 
 print("\nMost Traded pair:", most_traded_pair)
 print("Trades:", pair_counts[most_traded_pair])
+
+
+print(f"\nGross Profit: ${gross_profit:.2f}")
+print(f"Gross loss: ${gross_loss:.2f}")
+print(f"Profit factor: {profit_factor:.2f}")
