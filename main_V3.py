@@ -70,6 +70,9 @@ for trade in trades:
 
         current_loss_streak += 1
         current_win_streak = 0
+    # same for losing streak
+    if current_loss_streak > longest_loss_streak:
+        longest_loss_streak = current_loss_streak
 
     # added statements for best trades and worst trades
     if trade["profit"] > best_trade["profit"]:
