@@ -167,3 +167,7 @@ print(f"Profit factor: {profit_factor:.2f}")
 print("\n ===Streak log===")
 print(f"Longest wining Streak: {longest_win_streak}")
 print(f"Longest Losing Streak: {longest_loss_streak}")
+
+print("\n ====Risk metrics===")
+print(f"Average win: ${average_win:.2f}")
+print(f"Average loss: ${average_loss:.2f}")
