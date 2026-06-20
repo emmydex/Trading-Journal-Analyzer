@@ -31,10 +31,14 @@ losing_trades = 0
 total_profit = 0
 best_trade = trades[0]
 worst_trade = trades[0]
-
-# adding variables for gross_profit and gross_loss
 gross_profit = 0
 gross_loss = 0
+
+# adding variables for longest win streak , current win streak and longest losing streak
+current_win_streak = 0
+longest_win_streak = 0
+longest_loss_streak = 0
+
 
 # creating an empty dictionary for the variable
 pair_counts = {}
