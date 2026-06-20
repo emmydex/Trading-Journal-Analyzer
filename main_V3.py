@@ -113,6 +113,15 @@ if gross_profit > 0 :
 else:
     profit_factor = 0
 
+if winning_trades > 0:
+    average_win =total_winning_profit / winning_trades
+else:
+    average_win = 0
+
+if losing_trades > 0:
+    average_loss = total_losing_profit / losing_trades
+else:
+    average_loss = 0
 
 # calculating the profit factor
 profit_factor = gross_profit / gross_loss
