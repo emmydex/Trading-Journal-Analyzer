@@ -36,6 +36,7 @@ gross_loss = 0
 
 # adding variables for longest win streak , current win streak and longest losing streak
 current_win_streak = 0
+current_loss_streak = 0
 longest_win_streak = 0
 longest_loss_streak = 0
 
@@ -55,10 +56,20 @@ for trade in trades:
     # if profit is positive
     if trade["profit"] > 0:
         gross_profit += trade["profit"]
+        # becuase the win breaks the losing streak
+        current_win_streak += 1
+        current_loss_streak = 0
+    # checking new record and passing it back to current win streak if it is greater than the longest win streak
+    if current_win_streak > longest_win_streak:
+        longest_win_streak = current_win_streak
+
 
     # if profit is negative using abs to get the absolute value instead of a negative value
     if trade["profit"] < 0:
         gross_loss += abs(trade["profit"])
+
+        current_loss_streak += 1
+        current_win_streak = 0
 
     # added statements for best trades and worst trades
     if trade["profit"] > best_trade["profit"]:
