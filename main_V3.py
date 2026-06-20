@@ -142,3 +142,7 @@ print("Trades:", pair_counts[most_traded_pair])
 print(f"\n Gross Profit: ${gross_profit:.2f}")
 print(f"Gross loss: ${gross_loss:.2f}")
 print(f"Profit factor: {profit_factor:.2f}")
+
+print("\n ===Streak log===")
+print(f"Longest wining Streak: {longest_win_streak}")
+print(f"Longest Losing Streak: {longest_loss_streak}")
