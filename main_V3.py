@@ -60,6 +60,9 @@ for trade in trades:
         # becuase the win breaks the losing streak
         current_win_streak += 1
         current_loss_streak = 0
+
+        total_winning_profit += trade["profit"]
+
     # checking new record and passing it back to current win streak if it is greater than the longest win streak
     if current_win_streak > longest_win_streak:
         longest_win_streak = current_win_streak
@@ -71,6 +74,8 @@ for trade in trades:
 
         current_loss_streak += 1
         current_win_streak = 0
+
+        total_losing_profit += abs(trade["profit"])
     # same for losing streak
     if current_loss_streak > longest_loss_streak:
         longest_loss_streak = current_loss_streak
@@ -116,6 +121,12 @@ profit_factor = gross_profit / gross_loss
 win_rate = (winning_trades / total_trades) * 100
 average_profit = (total_profit / total_trades)
 
+
+# calculating average win
+average_win = total_winning_profit / winning_trades
+
+# calculating average loss
+average_loss = total_losing_profit / losing_trades
 
 
 
