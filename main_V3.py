@@ -184,3 +184,8 @@ print(f"Longest Losing Streak: {longest_loss_streak}")
 print("\n ====Risk metrics===")
 print(f"Average win: ${average_win:.2f}")
 print(f"Average loss: ${average_loss:.2f}")
+
+
+print("\n ==== Pair Performance Metric =====")
+for pair in pair_performance:
+    print(f"{pair}: ${pair_performance[pair]:.2f}")
