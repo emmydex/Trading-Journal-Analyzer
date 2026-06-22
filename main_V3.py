@@ -111,7 +111,7 @@ for trade in trades:
             most_traded_pair = pair
 
     # getting the pairs
-    pair = trade["pair"]
+    #pair = trade["pair"]
 
     # adding pair to the dictioary, else if pair is available in dictionary add valueto existing
     if pair not in pair_performance:
