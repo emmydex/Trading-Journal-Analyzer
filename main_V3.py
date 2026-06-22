@@ -45,6 +45,9 @@ total_losing_profit = 0
 # creating an empty dictionary for the variable
 pair_counts = {}
 
+# creating a dictionary for pair_performance
+pair_performance = {}
+
 # Loop through each trade in the list of trades and calculate the total profit
 for trade in trades:
     total_profit += trade["profit"]
