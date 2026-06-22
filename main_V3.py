@@ -110,6 +110,16 @@ for trade in trades:
         if pair_counts[pair] > pair_counts[most_traded_pair]:
             most_traded_pair = pair
 
+    # getting the pairs
+    pair = trade["pair"]
+
+    # adding pair to the dictioary, else if pair is available in dictionary add valueto existing
+    if pair not in pair_performance:
+        pair_performance[pair] = trade["profit"]
+    else:
+        pair_performance[pair] += trade["profit"]
+
+
 # handling the divisible by zero error
 if gross_profit > 0 :
     profit_factor = gross_profit / gross_loss
