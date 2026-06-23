@@ -16,4 +16,9 @@ def load_trades(filename):
 
 trades = load_trades("journal.csv")
 
-print(trades)
+def print_header():
+    print("\n=========================")
+    print("Trading Report")
+    print("=========================\n")
+
+print_header()
