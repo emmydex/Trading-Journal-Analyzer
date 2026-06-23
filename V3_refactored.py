@@ -1,5 +1,6 @@
 import csv
 
+# a function for loading and reading the csv file
 def load_trades(filename):
 
     trades = []
@@ -14,11 +15,20 @@ def load_trades(filename):
 
     return trades
 
-trades = load_trades("journal.csv")
 
+
+# a function for the prints
 def print_header():
     print("\n=========================")
     print("Trading Report")
     print("=========================\n")
 
-print_header()
+
+def main():
+    trades = load_trades("journal.csv")
+
+    print_header()
+
+    print(trades)
+
+main()
