@@ -15,3 +15,5 @@ def load_trades(filename):
     return trades
 
 trades = load_trades("journal.csv")
+
+print(trades)
