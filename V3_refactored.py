@@ -18,10 +18,27 @@ def load_trades(filename):
 # function for calculating metrics
 def calculate_metrics(trades):
 
+    winning_trades = 0
+    losing_trades = 0
+    total_profit = 0
+
+    for trade  in trades:
+        if trade["profit"] > 0:
+            winning_trades +=1
+
+        if trade["profit"] < 0:
+            losing_trades += 1
+
+        total_profit += trade["profit"]
+
     total_trades = len(trades)
-    print("calculating metrics...")
+    
+
     return {
-        "total_trades": total_trades
+        "total_trades": total_trades,
+        "winning_trades" : winning_trades,
+        "losing_trades" : losing_trades,
+        "total_profit" : total_profit
     }
 
 
@@ -34,6 +51,9 @@ def print_header():
 
 
 def main():
+
+    print("calculating metrics...")
+
     trades = load_trades("journal.csv")
 
     metrics = calculate_metrics(trades)
