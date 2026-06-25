@@ -25,9 +25,11 @@ def calculate_metrics(trades):
     for trade  in trades:
         if trade["profit"] > 0:
             winning_trades +=1
-
-        if trade["profit"] < 0:
+        else:
             losing_trades += 1
+
+        #if trade["profit"] < 0:
+        #    losing_trades += 1
 
         total_profit += trade["profit"]
 
