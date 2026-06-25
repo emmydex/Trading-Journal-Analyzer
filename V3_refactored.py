@@ -15,6 +15,11 @@ def load_trades(filename):
 
     return trades
 
+# function for calculating metrics
+def calculate_metrics():
+    print("calculating metrics...")
+    return {}
+
 
 
 # a function for the prints
@@ -27,8 +32,12 @@ def print_header():
 def main():
     trades = load_trades("journal.csv")
 
+    metrics = calculate_metrics(trades)
+
     print_header()
 
     print(trades)
+
+    print(metrics)
 
 main()
