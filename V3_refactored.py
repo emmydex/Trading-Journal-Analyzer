@@ -21,6 +21,7 @@ def calculate_metrics(trades):
     winning_trades = 0
     losing_trades = 0
     total_profit = 0
+    breakeven_trades = 0
 
     for trade  in trades:
         if trade["profit"] > 0:
@@ -31,8 +32,9 @@ def calculate_metrics(trades):
         elif trade["profit"] < 0:
             losing_trades += 1
         
-        #else:
-      #      losing_trades += 1
+        # added a variable for break even trades
+        else:
+            breakeven_trades += 1
 
         #if trade["profit"] < 0:
         #    losing_trades += 1
