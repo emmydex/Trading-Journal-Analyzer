@@ -36,7 +36,8 @@ def main():
 
     print_header()
 
-    print(trades)
+    # ths looks cleaner
+    print(f"Loaded {len(trades)} trades")
 
     print(metrics)
 
