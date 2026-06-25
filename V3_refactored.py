@@ -16,7 +16,7 @@ def load_trades(filename):
     return trades
 
 # function for calculating metrics
-def calculate_metrics():
+def calculate_metrics(trades):
     print("calculating metrics...")
     return {}
 
