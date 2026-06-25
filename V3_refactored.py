@@ -17,8 +17,12 @@ def load_trades(filename):
 
 # function for calculating metrics
 def calculate_metrics(trades):
+
+    total_trades = len(trades)
     print("calculating metrics...")
-    return {}
+    return {
+        "total_trades": total_trades
+    }
 
 
 
