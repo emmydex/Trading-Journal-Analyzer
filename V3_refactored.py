@@ -42,9 +42,11 @@ def calculate_metrics(trades):
         #    losing_trades += 1
 
         if trade["profit"] > best_trade["profit"]:
+            #was comaring a float to a dictionary
             best_trade["profit"] = trade
 
         if trade["profit"] < worst_trade["profit"]:
+            #same comparison here
             worst_trade["profit"] = trade
 
         total_profit += trade["profit"]
