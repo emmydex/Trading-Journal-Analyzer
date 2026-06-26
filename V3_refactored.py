@@ -43,11 +43,11 @@ def calculate_metrics(trades):
 
         if trade["profit"] > best_trade["profit"]:
             #was comaring a float to a dictionary
-            best_trade["profit"] = trade
+            best_trade = trade
 
         if trade["profit"] < worst_trade["profit"]:
             #same comparison here
-            worst_trade["profit"] = trade
+            worst_trade = trade
 
         total_profit += trade["profit"]
 
