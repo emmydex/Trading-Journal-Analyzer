@@ -26,6 +26,10 @@ def calculate_metrics(trades):
     worst_trade = trades[0]
     gross_profit = 0
     gross_loss = 0
+    current_win_streak = 0
+    current_loss_streak = 0
+    longest_win_streak =0
+    longest_loss_streak = 0
 
 
     for trade  in trades:
