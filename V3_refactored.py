@@ -41,6 +41,10 @@ def calculate_metrics(trades):
         #if trade["profit"] < 0:
         #    losing_trades += 1
        # there is no way best_trade and worst_trade are the same results
+
+        # NOTE:best_trade = trade makes the variable point to a diffrent dictionary.
+        # while best_trade["profit"] = trade["profit"] changes the contents of the current dictionary
+
         if trade["profit"] > best_trade["profit"]:
             
             best_trade = trade
