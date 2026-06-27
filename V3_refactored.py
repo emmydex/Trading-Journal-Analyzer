@@ -62,7 +62,12 @@ def calculate_metrics(trades):
 
         if trade["profit"] > 0:
             gross_profit += trade["profit"]
+
+            current_win_streak += 1
+            current_loss_streak = 0
         elif trade["profit"] < 0:
+            current_loss_streak += 1
+            current_win_streak = 0
             gross_loss += abs(trade["profit"])
 
         
@@ -80,7 +85,9 @@ def calculate_metrics(trades):
         "best_trade" : best_trade,
         "worst_trade" : worst_trade,
         'gross_loss' : gross_loss,
-        "gross_profit" : gross_profit
+        "gross_profit" : gross_profit,
+        "current_win_streak" : current_win_streak,
+        "current_loss_streak": current_loss_streak
     }
 
 
