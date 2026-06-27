@@ -40,7 +40,7 @@ def calculate_metrics(trades):
 
         #if trade["profit"] < 0:
         #    losing_trades += 1
-        
+       # there is no way best_trade and worst_trade are the same results
         if trade["profit"] > best_trade["profit"]:
             
             best_trade["profit"] = trade["profit"]
