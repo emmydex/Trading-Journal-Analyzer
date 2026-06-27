@@ -24,6 +24,9 @@ def calculate_metrics(trades):
     breakeven_trades = 0
     best_trade = trades[0]
     worst_trade = trades[0]
+    gross_profit = 0
+    gross_loss = 0
+
 
     for trade  in trades:
         if trade["profit"] > 0:
@@ -53,6 +56,13 @@ def calculate_metrics(trades):
     
             worst_trade = trade
 
+        if trade["profit"] > 0:
+            gross_profit += trade["profit"]
+        elif trade["profit"] < 0:
+            gross_loss += abs(trade["profit"])
+
+        
+
         total_profit += trade["profit"]
 
     total_trades = len(trades)
@@ -63,8 +73,10 @@ def calculate_metrics(trades):
         "winning_trades" : winning_trades,
         "losing_trades" : losing_trades,
         "total_profit" : total_profit,
-        "best_trade" : best_trade["profit"],
-        "worst_trade" : worst_trade["profit"]
+        "best_trade" : best_trade,
+        "worst_trade" : worst_trade,
+        'gross_loss' : gross_loss,
+        "gross_profit" : gross_profit
     }
 
 
