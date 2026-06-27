@@ -43,11 +43,11 @@ def calculate_metrics(trades):
        # there is no way best_trade and worst_trade are the same results
         if trade["profit"] > best_trade["profit"]:
             
-            best_trade["profit"] = trade["profit"]
+            best_trade = trade
 
         if trade["profit"] < worst_trade["profit"]:
     
-            worst_trade["profit"] = trade["profit"]
+            worst_trade = trade
 
         total_profit += trade["profit"]
 
