@@ -155,5 +155,6 @@ def main():
     print(f"Loaded {len(trades)} trades")
 
     print(metrics)
+    print(performance)
 
 main()
