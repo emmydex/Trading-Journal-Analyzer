@@ -106,7 +106,7 @@ def calculate_metrics(trades):
     }
 
 def pair_performance(trades):
-    pair_performance = {}
+    pair_metrics = {}
     pair_counts = {}
 
     for trade in trades:
@@ -130,7 +130,7 @@ def pair_performance(trades):
         else:
             pair_performance[pair] += trade["profit"]
 
-
+    return pair_performance
     
 # a function for the prints
 def print_header():
