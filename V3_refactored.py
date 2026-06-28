@@ -106,8 +106,32 @@ def calculate_metrics(trades):
     }
 
 def pair_performance(trades):
-    pass
+    pair_performance = {}
+    pair_counts = {}
 
+    for trade in trades:
+
+        pair = trades["pair"]
+
+    if pair not in pair_counts :
+        pair_counts[pair] = 1
+    else:
+        pair_counts[pair] += 1
+
+    most_traded_pair = list(pair_counts.keys())[0]
+
+    for pair in pair_counts :
+
+        if pair_counts[pair] > pair_counts[most_traded_pair]:
+            most_traded_pair = pair
+
+    if pair not in pair_performance:
+        pair_performance[pair] = trades["profit"]
+    else:
+        pair_performance[pair] += trades["profit"]
+
+
+    
 # a function for the prints
 def print_header():
     print("\n=========================")
@@ -124,6 +148,8 @@ def main():
     metrics = calculate_metrics(trades)
 
     print_header()
+
+    performance = pair_performance(trades)
 
     # ths looks cleaner
     print(f"Loaded {len(trades)} trades")
