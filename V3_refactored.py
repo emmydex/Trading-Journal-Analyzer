@@ -65,11 +65,17 @@ def calculate_metrics(trades):
 
             current_win_streak += 1
             current_loss_streak = 0
-        elif trade["profit"] < 0:
+            
+        if current_win_streak > longest_win_streak:
+            longest_win_streak = current_win_streak
+            
+        elif trade["profit"] < 0 :
             current_loss_streak += 1
             current_win_streak = 0
             gross_loss += abs(trade["profit"])
 
+        if current_loss_streak > longest_loss_streak:
+            longest_loss_streak = current_loss_streak
         
 
         total_profit += trade["profit"]
@@ -87,7 +93,9 @@ def calculate_metrics(trades):
         'gross_loss' : gross_loss,
         "gross_profit" : gross_profit,
         "current_win_streak" : current_win_streak,
-        "current_loss_streak": current_loss_streak
+        "current_loss_streak": current_loss_streak,
+        "longest_win_streak" : longest_win_streak,
+        "longest_loss_streak" : longest_loss_streak
     }
 
 
