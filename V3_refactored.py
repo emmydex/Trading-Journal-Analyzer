@@ -30,6 +30,8 @@ def calculate_metrics(trades):
     current_loss_streak = 0
     longest_win_streak =0
     longest_loss_streak = 0
+    total_winning_profit = 0
+    total_losing_profit = 0
 
 
     for trade  in trades:
@@ -65,6 +67,8 @@ def calculate_metrics(trades):
 
             current_win_streak += 1
             current_loss_streak = 0
+
+            total_winning_profit += trade["profit"]
             
         if current_win_streak > longest_win_streak:
             longest_win_streak = current_win_streak
@@ -73,6 +77,7 @@ def calculate_metrics(trades):
             current_loss_streak += 1
             current_win_streak = 0
             gross_loss += abs(trade["profit"])
+            total_losing_profit += trade["profit"]
 
         if current_loss_streak > longest_loss_streak:
             longest_loss_streak = current_loss_streak
@@ -95,7 +100,9 @@ def calculate_metrics(trades):
         "current_win_streak" : current_win_streak,
         "current_loss_streak": current_loss_streak,
         "longest_win_streak" : longest_win_streak,
-        "longest_loss_streak" : longest_loss_streak
+        "longest_loss_streak" : longest_loss_streak,
+        "total_winning_profit" : total_winning_profit,
+        "total_losing_profit" : total_losing_profit
     }
 
 
