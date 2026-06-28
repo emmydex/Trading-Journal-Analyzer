@@ -105,7 +105,8 @@ def calculate_metrics(trades):
         "total_losing_profit" : total_losing_profit
     }
 
-
+def pair_performance(trades):
+    pass
 
 # a function for the prints
 def print_header():
