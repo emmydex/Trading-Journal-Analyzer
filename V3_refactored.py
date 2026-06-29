@@ -108,6 +108,7 @@ def calculate_metrics(trades):
 def pair_performance(trades):
     pair_metrics = {}
     pair_counts = {}
+    pair_profit = {}
 
     for trade in trades:
 
@@ -125,10 +126,17 @@ def pair_performance(trades):
         if pair_counts[pair] > pair_counts[most_traded_pair]:
             most_traded_pair = pair
 
+        profit = trade["profit"]
+
+        if profit not in pair_profit :
+            pair_profit[profit] = 1
+        else:
+            pair_profit[profit] += 1
        
     return {
         "most_traded_pair" : most_traded_pair,
-        "pair_count" : pair_counts
+        "pair_count" : pair_counts,
+        "pair_profit" : pair_profit
     }
     
 # a function for the prints
