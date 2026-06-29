@@ -125,12 +125,11 @@ def pair_performance(trades):
         if pair_counts[pair] > pair_counts[most_traded_pair]:
             most_traded_pair = pair
 
-        if pair not in pair_performance:
-            pair_performance[pair] = trade["profit"]
-        else:
-            pair_performance[pair] += trade["profit"]
-
-    return pair_performance
+       
+    return {
+        "most_traded_pair" : most_traded_pair,
+        "pair_count" : pair_counts
+    }
     
 # a function for the prints
 def print_header():
