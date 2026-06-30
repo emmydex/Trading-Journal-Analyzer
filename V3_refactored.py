@@ -166,9 +166,10 @@ def main():
     trades = load_trades("journal.csv")
 
     metrics = calculate_metrics(trades)
+    pair_metrics = pair_performance(trades)
 
     # print_header()
-    print_report() 
+    print_report(metrics,pair_metrics) 
 
     performance = pair_performance(trades)
 
