@@ -87,6 +87,8 @@ def calculate_metrics(trades):
 
     total_trades = len(trades)
     
+    win_rate = (winning_trades / total_trades)
+    average_profit = (total_profit / total_trades)
 
     return {
         "total_trades": total_trades,
@@ -103,7 +105,9 @@ def calculate_metrics(trades):
         "longest_loss_streak" : longest_loss_streak,
         "total_winning_profit" : total_winning_profit,
         "total_losing_profit" : total_losing_profit,
-        "breakeven_trades" : breakeven_trades
+        "breakeven_trades" : breakeven_trades,
+        "win_rate" : win_rate,
+        "average_profit" : average_profit
     }
 
 def pair_performance(trades):
@@ -155,10 +159,17 @@ def print_header():
 # a function for printing reports
 def print_report(metrics,pair_metrics):
     print_header()
+    print("Trading Summery")
+    print("________________\n")
     print(f" Total trades : {metrics['total_trades']}")
     print(f' Winning Trades : {metrics["winning_trades"]}')
     print(f' Losing Trades : {metrics["losing_trades"]}')
     print(f" Breakeven Trades : {metrics['breakeven_trades']}")
+    print("\nPerformance")
+    print("________________\n")
+    print(f" Total Profit : ${metrics['total_profit']:.2f}")
+    print(f" Win Rate : {metrics['win_rate']}%")
+    print(f" Average Profit : {metrics['average_profit']:.2f}")
 
 
 def main():
@@ -170,15 +181,18 @@ def main():
     metrics = calculate_metrics(trades)
     pair_metrics = pair_performance(trades)
 
+
     # print_header()
     print_report(metrics,pair_metrics) 
+
+
 
     performance = pair_performance(trades)
 
     # ths looks cleaner
     print(f"Loaded {len(trades)} trades")
 
-    print(metrics)
+    
     print(performance)
 
 main()
