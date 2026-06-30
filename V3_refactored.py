@@ -110,10 +110,12 @@ def pair_performance(trades):
     pair_counts = {}
     pair_profit = {}
 
+    #for every trade
     for trade in trades:
 
         pair = trade["pair"]
 
+        # update counter
         if pair not in pair_counts :
             pair_counts[pair] = 1
         else:
@@ -121,6 +123,7 @@ def pair_performance(trades):
 
         profit = trade["pair"]
 
+        #update accumulator
         if profit not in pair_profit :
             pair_profit[pair] = trade["profit"]
         else:
