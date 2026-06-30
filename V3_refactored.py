@@ -102,7 +102,8 @@ def calculate_metrics(trades):
         "longest_win_streak" : longest_win_streak,
         "longest_loss_streak" : longest_loss_streak,
         "total_winning_profit" : total_winning_profit,
-        "total_losing_profit" : total_losing_profit
+        "total_losing_profit" : total_losing_profit,
+        "breakeven_trades" : breakeven_trades
     }
 
 def pair_performance(trades):
@@ -157,7 +158,7 @@ def print_report(metrics,pair_metrics):
     print(f" Totoal trades : {metrics['total_trades']}")
     print(f' Winning Trades : {metrics["winning_trades"]}')
     print(f' Losing Trades : {metrics["losing_trades"]}')
-    print(f"Breakeven Trades : {metrics['breakeven_trades']}")
+    print(f" Breakeven Trades : {metrics['breakeven_trades']}")
 
 
 def main():
