@@ -155,7 +155,7 @@ def print_header():
 # a function for printing reports
 def print_report(metrics,pair_metrics):
     print_header()
-    print(f" Totoal trades : {metrics['total_trades']}")
+    print(f" Total trades : {metrics['total_trades']}")
     print(f' Winning Trades : {metrics["winning_trades"]}')
     print(f' Losing Trades : {metrics["losing_trades"]}')
     print(f" Breakeven Trades : {metrics['breakeven_trades']}")
