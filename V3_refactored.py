@@ -169,7 +169,7 @@ def print_report(metrics,pair_metrics):
     print("________________\n")
     print(f" Total Profit : ${metrics['total_profit']:.2f}")
     print(f" Win Rate : {metrics['win_rate']}%")
-    print(f" Average Profit : {metrics['average_profit']:.2f}")
+    print(f" Average Profit : ${metrics['average_profit']:.2f}")
 
 
 def main():
