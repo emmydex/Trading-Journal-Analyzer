@@ -151,6 +151,11 @@ def print_header():
     print("=========================\n")
 
 
+# a function for printing reports
+def print_report(metrics,pair_metrics):
+    pass
+
+
 def main():
 
     print("calculating metrics...")
