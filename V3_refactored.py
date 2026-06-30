@@ -122,9 +122,9 @@ def pair_performance(trades):
         profit = trade["pair"]
 
         if profit not in pair_profit :
-            pair_profit[pair] = pair_profit["profit"]
+            pair_profit[pair] = trade["profit"]
         else:
-            pair_profit[pair] += pair_profit["profit"]
+            pair_profit[pair] += trade["profit"]
        
 
     most_traded_pair = list(pair_counts.keys())[0]
