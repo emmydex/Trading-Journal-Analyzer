@@ -87,7 +87,7 @@ def calculate_metrics(trades):
 
     total_trades = len(trades)
     
-    win_rate = (winning_trades / total_trades)
+    win_rate = (winning_trades / total_trades)* 100
     average_profit = (total_profit / total_trades)
 
     return {
@@ -159,7 +159,7 @@ def print_header():
 # a function for printing reports
 def print_report(metrics,pair_metrics):
     print_header()
-    print("Trading Summery")
+    print("Trading Summary")
     print("________________\n")
     print(f" Total trades : {metrics['total_trades']}")
     print(f' Winning Trades : {metrics["winning_trades"]}')
@@ -193,6 +193,6 @@ def main():
     print(f"Loaded {len(trades)} trades")
 
     
-    print(performance)
+    
 
 main()
