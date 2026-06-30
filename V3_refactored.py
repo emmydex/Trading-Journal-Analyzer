@@ -153,7 +153,10 @@ def print_header():
 
 # a function for printing reports
 def print_report(metrics,pair_metrics):
-    pass
+    print_header()
+    print(metrics["total_trades"])
+    print(metrics["winning_trades"])
+    print(metrics["losing_trades"])
 
 
 def main():
@@ -164,7 +167,8 @@ def main():
 
     metrics = calculate_metrics(trades)
 
-    print_header()
+    # print_header()
+    print_report() 
 
     performance = pair_performance(trades)
 
