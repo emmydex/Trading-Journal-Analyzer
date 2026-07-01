@@ -178,12 +178,13 @@ def print_report(metrics,pair_metrics):
     print("____________________")
     print(f"pair: {best_trade['pair']}")
     print(f"Direction : {best_trade['direction']}")
-    print(f"profit : {best_trade['profit']:.2f}")
+    print(f"profit : ${best_trade['profit']:.2f}")
     print("___________________\n")
     print("Worst Trade")
+    print("___________________")
     print(f"Pair: {worst_trade['pair']}")
     print(f"Direction: {worst_trade['direction']}")
-    print(f"Profit : {worst_trade['profit']:.2f}")
+    print(f"Profit : ${worst_trade['profit']:.2f}")
     
 
 
