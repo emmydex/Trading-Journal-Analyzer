@@ -110,6 +110,7 @@ def calculate_metrics(trades):
         "average_profit" : average_profit
     }
 
+
 def pair_performance(trades):
     pair_metrics = {}
     pair_counts = {}
