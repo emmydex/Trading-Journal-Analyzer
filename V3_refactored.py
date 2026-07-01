@@ -185,8 +185,11 @@ def print_report(metrics,pair_metrics):
     print("___________________\n")
     print("Worst Trade")
     print("___________________")
+    print(f"Date : {worst_trade['date']}")
     print(f"Pair: {worst_trade['pair']}")
     print(f"Direction: {worst_trade['direction']}")
+    print(f"Entry : {worst_trade['entry']}")
+    print(f'Exit : {worst_trade['exit']}')
     print(f"Profit : ${worst_trade['profit']:.2f}")
     
 
