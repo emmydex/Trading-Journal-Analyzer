@@ -173,7 +173,7 @@ def print_report(metrics,pair_metrics):
     print("\nBest Trade")
     print("________________\n")
     print(f"Best Trade : {metrics['best_trade']}")
-    print(f"Worst Trade : {metrics['worst_trade']}")
+    
 
 
 def main():
