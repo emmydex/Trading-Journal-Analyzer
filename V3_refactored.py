@@ -211,8 +211,7 @@ def main():
 
     performance = pair_performance(trades)
 
-    # ths looks cleaner
-    print(f"Loaded {len(trades)} trades")
+
 
     
     
