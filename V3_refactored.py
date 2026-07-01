@@ -134,7 +134,7 @@ def pair_performance(trades):
         else:
             pair_profit[pair] += trade["profit"]
        
-
+    
     most_traded_pair = list(pair_counts.keys())[0]
 
     for pair in pair_counts :
@@ -158,6 +158,8 @@ def print_header():
 
 # a function for printing reports
 def print_report(metrics,pair_metrics):
+    best_trade = metrics["best_trade"]
+    worst_trade = metrics["worst_trade"]
     print_header()
     print("Trading Summary")
     print("________________\n")
@@ -170,9 +172,12 @@ def print_report(metrics,pair_metrics):
     print(f"Total Profit : ${metrics['total_profit']:.2f}")
     print(f"Win Rate : {metrics['win_rate']}%")
     print(f"Average Profit : ${metrics['average_profit']:.2f}")
+    print("____________________")
     print("\nBest Trade")
-    print("________________\n")
-    print(f"Best Trade : {metrics['best_trade']}")
+    print("________________")
+    print(f"pair: {best_trade['pair']}")
+    print(f"Direction : {best_trade['direction']}")
+    print(f"profit : {best_trade['profit']}")
     
 
 
