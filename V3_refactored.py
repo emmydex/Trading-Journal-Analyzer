@@ -141,7 +141,6 @@ def pair_performance(trades):
         else:
             pair_profit[pair] += trade["profit"]
        
-    
     most_traded_pair = list(pair_counts.keys())[0]
 
     for pair in pair_counts :
@@ -213,6 +212,12 @@ def print_report(metrics,pair_metrics):
     print(f"Current Loss Streak : {metrics['current_loss_streak']}")
     print(f"Longest Win Streak : {metrics['longest_win_streak']}")
     print(f"Longest loss Streak : {metrics['longest_loss_streak']}")
+    print("_____________________\n")
+    print("   Pair Performance   ")
+    print("_____________________")
+    print(f"Most Traded Pair : {pair_metrics['most_traded_pair']}")
+    print(f"Pair Count :{pair_metrics['pair_count']}")
+    print(f"Pair Profit : {pair_metrics['pair_profit']}")
 
 
 def main():
@@ -230,7 +235,7 @@ def main():
 
 
 
-    performance = pair_performance(trades)
+    
 
 
 
