@@ -199,10 +199,12 @@ def print_report(metrics,pair_metrics):
     print(f'Exit : {worst_trade["exit"]}')
     print(f"Profit : ${worst_trade['profit']:.2f}")
     print("___________________\n")
-    print("   Gross Profit")
+    print("   Risk Metrics    ")
     print("___________________")
-    print(f"Gross Profit : ${metrics['gross_profit']}")
-    print(f"Gross Loss : ${metrics['gross_loss']}")
+    print(f"Gross Profit : ${metrics['gross_profit']:.2f}")
+    print(f"Gross Loss : ${metrics['gross_loss']:.2f}")
+    print(f"Average Win : ${metrics['average_win']:.2f}")
+    print(f"Average Loss : ${metrics['average_loss']:.2f}")
     print(f"Profit Factor : {metrics['profit_factor']}")
 
 
