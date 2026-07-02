@@ -206,6 +206,13 @@ def print_report(metrics,pair_metrics):
     print(f"Average Win : ${metrics['average_win']:.2f}")
     print(f"Average Loss : ${metrics['average_loss']:.2f}")
     print(f"Profit Factor : {metrics['profit_factor']}")
+    print("___________________\n")
+    print("   Streak Metrics    ")
+    print("___________________")
+    print(f"Current Win Streak : {metrics['current_win_streak']}")
+    print(f"Current Loss Streak : {metrics['current_loss_streak']}")
+    print(f"Longest Win Streak : {metrics['longest_win_streak']}")
+    print(f"Longest loss Streak : {metrics['longest_loss_streak']}")
 
 
 def main():
