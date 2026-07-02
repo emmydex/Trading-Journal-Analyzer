@@ -90,6 +90,8 @@ def calculate_metrics(trades):
     win_rate = (winning_trades / total_trades)* 100
     average_profit = (total_profit / total_trades)
     profit_factor = gross_profit/gross_loss
+    average_win = total_winning_profit/winning_trades
+    average_loss = total_losing_profit/losing_trades
 
     return {
         "total_trades": total_trades,
@@ -109,7 +111,9 @@ def calculate_metrics(trades):
         "breakeven_trades" : breakeven_trades,
         "win_rate" : win_rate,
         "average_profit" : average_profit,
-        "profit_factor" : profit_factor
+        "profit_factor" : profit_factor,
+        "average_win" : average_win,
+        "average_loss" : average_loss
     }
 
 
