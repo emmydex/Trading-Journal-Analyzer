@@ -220,6 +220,7 @@ def print_report(metrics,pair_metrics):
     print(f"Pair Profit : {pair_metrics['pair_profit']}")
 
 
+
 def main():
 
     print("calculating metrics...")
