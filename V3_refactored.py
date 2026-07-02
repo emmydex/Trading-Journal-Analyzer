@@ -199,6 +199,7 @@ def print_report(metrics,pair_metrics):
     print("___________________")
     print(f"Gross Profit : ${metrics['gross_profit']}")
     print(f"Gross Loss : ${metrics['gross_loss']}")
+    print(f"Profit Factor : {metrics['profit_factor']}")
 
 
 def main():
