@@ -205,7 +205,7 @@ def print_report(metrics,pair_metrics):
     print(f"Gross Profit : ${metrics['gross_profit']:.2f}")
     print(f"Gross Loss : ${metrics['gross_loss']:.2f}")
     print(f"Average Win : ${metrics['average_win']:.2f}")
-    print(f"Average Loss : ${abs(metrics['average_loss']):.2f)}")
+    print(f"Average Loss : ${abs(metrics['average_loss']):.2f}")
     print(f"Profit Factor : {metrics['profit_factor']:.2f}")
     print("___________________\n")
     print("   Streak Metrics    ")
