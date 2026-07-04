@@ -228,9 +228,8 @@ def print_report(metrics,pair_metrics):
 
     for pair in pair_count:
         print("---------PAIR COUNT----------")
-        print(f"EURUSD : {pair_count['EURUSD']}")
-        print(f"GBPUSD : {pair_count['GBPUSD']}")
-        print(f"XAUUSD : {pair_count['XAUUSD']}")
+        print(pair_count[pair])
+        
     
         
 
