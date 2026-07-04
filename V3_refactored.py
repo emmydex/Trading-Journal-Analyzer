@@ -164,6 +164,8 @@ def print_header():
 
 # a function for printing reports
 def print_report(metrics,pair_metrics):
+    pair_count = metrics["best_trade"]
+    pair_profit = metrics["worst_trade"]
     best_trade = metrics["best_trade"]
     worst_trade = metrics["worst_trade"]
     print_header()
@@ -203,8 +205,8 @@ def print_report(metrics,pair_metrics):
     print(f"Gross Profit : ${metrics['gross_profit']:.2f}")
     print(f"Gross Loss : ${metrics['gross_loss']:.2f}")
     print(f"Average Win : ${metrics['average_win']:.2f}")
-    print(f"Average Loss : ${metrics['average_loss']:.2f}")
-    print(f"Profit Factor : {metrics['profit_factor']}")
+    print(f"Average Loss : ${abs(metrics['average_loss']):.2f)}")
+    print(f"Profit Factor : {metrics['profit_factor']:.2f}")
     print("___________________\n")
     print("   Streak Metrics    ")
     print("___________________")
@@ -216,9 +218,13 @@ def print_report(metrics,pair_metrics):
     print("   Pair Performance   ")
     print("_____________________")
     print(f"Most Traded Pair : {pair_metrics['most_traded_pair']}")
+
+    
     print(f"Pair Count :{pair_metrics['pair_count']}")
     print(f"Pair Profit : {pair_metrics['pair_profit']}")
 
+    for pair in pair_metrics["pair_count"]:
+        pass
 
 
 def main():
