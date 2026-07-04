@@ -224,7 +224,7 @@ def print_report(metrics,pair_metrics):
     print(f"Pair Profit : {pair_metrics['pair_profit']}")
 
     for pair in pair_metrics["pair_count"]:
-        print(f"Pair : {pair_count}")
+        print(pair_count[pair])
         
 
 
