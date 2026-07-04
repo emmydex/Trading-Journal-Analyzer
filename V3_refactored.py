@@ -226,8 +226,10 @@ def print_report(metrics,pair_metrics):
     pair_count = pair_metrics["pair_count"]
     pair_profit = pair_metrics["pair_profit"]
 
-    for pair in pair_count["pair_count"]:
-        print(pair_count[pair])
+    for pair in pair_count:
+        print(f"EURUSD : {pair_count['EURUSD']}")
+        print(f"gbpusd : {pair_count['gbpusd']}")
+        print(f"xauusd : {pair_count['xausd']}")
         
 
 
