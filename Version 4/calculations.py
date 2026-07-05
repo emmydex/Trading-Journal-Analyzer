@@ -99,3 +99,43 @@ def calculate_metrics(trades):
         "average_win" : average_win,
         "average_loss" : average_loss
     }
+
+
+def pair_performance(trades):
+    pair_metrics = {}
+    pair_counts = {}
+    pair_profit = {}
+    
+    #for every trade
+    for trade in trades:
+
+        pair = trade["pair"]
+
+        # update counter
+        if pair not in pair_counts :
+            pair_counts[pair] = 1
+        else:
+            pair_counts[pair] += 1
+
+        profit = trade["pair"]
+
+        #update accumulator
+        if profit not in pair_profit :
+            pair_profit[pair] = trade["profit"]
+        else:
+            pair_profit[pair] += trade["profit"]
+       
+    most_traded_pair = list(pair_counts.keys())[0]
+
+    for pair in pair_counts :
+
+        if pair_counts[pair] > pair_counts[most_traded_pair]:
+            most_traded_pair = pair
+
+        
+    return {
+        "most_traded_pair" : most_traded_pair,
+        "pair_count" : pair_counts,
+        "pair_profit" : pair_profit
+    }
+    
