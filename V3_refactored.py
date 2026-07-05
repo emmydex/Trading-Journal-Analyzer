@@ -229,6 +229,7 @@ def print_report(metrics,pair_metrics):
         print("-------------")
         print(f"Trades : {pair_count[pair]}")
         print(f"Profit : ${pair_profit[pair]}")
+        print("________________\n")
         
     
 
