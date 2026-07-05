@@ -220,16 +220,15 @@ def print_report(metrics,pair_metrics):
     print(f"Most Traded Pair : {pair_metrics['most_traded_pair']}")
 
     
-    print(f"Pair Count :{pair_metrics['pair_count']}")
-    print(f"Pair Profit : {pair_metrics['pair_profit']}")
 
     pair_count = pair_metrics["pair_count"]
     pair_profit = pair_metrics["pair_profit"]
 
     for pair in pair_count:
         print("---------PAIR COUNT----------")
-        print(f'EURUSD : {pair[EURUSD]}')
-        print(f"GBPUSD : {pair['GBPUSD']}")
+        print(pair)
+        print(pair_count[pair])
+        print(pair_profit[pair])
         
     
         
