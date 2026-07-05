@@ -9,7 +9,7 @@ from reports import print_report
 
 def main():
 
-    print("calculating metrics...")
+
 
     trades = load_trades("journal.csv")
 
