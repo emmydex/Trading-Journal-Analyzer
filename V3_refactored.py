@@ -51,7 +51,7 @@ def calculate_metrics(trades):
         #    losing_trades += 1
        # there is no way best_trade and worst_trade are the same results
 
-        # NOTE:best_trade = trade makes the variable point to a diffrent dictionary.
+        # NOTE:best_trade = trade ; makes the variable point to a diffrent dictionary.
         # while best_trade["profit"] = trade["profit"] changes the contents of the current dictionary
 
         if trade["profit"] > best_trade["profit"]:
@@ -231,8 +231,6 @@ def print_report(metrics,pair_metrics):
         print(f"Profit : ${pair_profit[pair]}")
         
     
-        
-
 
 def main():
 
@@ -247,13 +245,6 @@ def main():
     # print_header()
     print_report(metrics,pair_metrics) 
 
-
-
-    
-
-
-
-    
-    
+ 
 
 main()
