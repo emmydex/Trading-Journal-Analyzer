@@ -50,12 +50,20 @@ This project solves that problem by automatically analyzing a trading journal.
 ## Project Structure
 
 ```text
-trading-journal-analyzer/
+Trading Journal Analyzer/
 │
-├── main.py
 ├── journal.csv
-├── reports/
-└── README.md
+└── main.py
+└── main_V1.py
+└── main_V2.py
+├── main_V3.py
+├── README.md
+├── V3_README.md
+├── observations.md
+├── V3_observations.md
+└── future_improvements.md
+└── V3_future_improvements.md
+├── v3_refactored.py
 ```
 
 ## Sample Trade Data
@@ -65,6 +73,7 @@ date,pair,direction,entry,exit,profit
 2026-06-01,EURUSD,BUY,1.0800,1.0850,50
 2026-06-02,GBPUSD,SELL,1.2700,1.2650,40
 2026-06-03,XAUUSD,BUY,3350,3340,-100
+2026-06-04,gbpusd,SELL,1.34593,1.34342,2.51
 ```
 
 ## Example Output
