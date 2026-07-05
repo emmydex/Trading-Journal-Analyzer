@@ -168,6 +168,8 @@ def print_report(metrics,pair_metrics):
     pair_profit = metrics["worst_trade"]
     best_trade = metrics["best_trade"]
     worst_trade = metrics["worst_trade"]
+
+
     print_header()
     print(" Trading Summary")
     print("___________________\n")
@@ -216,19 +218,17 @@ def print_report(metrics,pair_metrics):
     print(f"Longest loss Streak : {metrics['longest_loss_streak']}")
     print("_____________________\n")
     print("   Pair Performance   ")
-    print("_____________________")
-    print(f"Most Traded Pair : {pair_metrics['most_traded_pair']}")
-
-    
+    print("_____________________\n")
+    print(f"Most Traded Pair : {pair_metrics['most_traded_pair']}\n")
 
     pair_count = pair_metrics["pair_count"]
     pair_profit = pair_metrics["pair_profit"]
 
     for pair in pair_count:
-        print("---------PAIR COUNT----------")
         print(pair)
-        print(pair_count[pair])
-        print(pair_profit[pair])
+        print("-------------")
+        print(f"Trades : {pair_count[pair]}")
+        print(f"Profit : ${pair_profit[pair]}")
         
     
         
