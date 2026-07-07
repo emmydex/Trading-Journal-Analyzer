@@ -6,6 +6,6 @@ window.geometry("800x500")
 label = tk.Label(window, text="My First Trading Journal")
 label.pack()
 another_label =tk.Label(window, text='lets Create oluwafemi')
-label.pack()
+another_label.pack()
 
 window.mainloop()
