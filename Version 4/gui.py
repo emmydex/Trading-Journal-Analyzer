@@ -19,5 +19,9 @@ def button_clicked():
 button = tk.Button(
     window,
     text="Click Me",
+    #passed the button_clicked function to button's command parameter
+    command=button_clicked
 )
+
+button.pack()
 window.mainloop()
