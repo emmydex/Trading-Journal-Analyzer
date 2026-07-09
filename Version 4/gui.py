@@ -15,4 +15,9 @@ def button_clicked():
         text="Status: Button Clicked!"
     )
 
+
+button = tk.Button(
+    window,
+    text="Click Me",
+)
 window.mainloop()
