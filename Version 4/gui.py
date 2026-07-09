@@ -9,8 +9,10 @@ status_label = tk.Label(window, text="Status: Not clicked")
 
 status_label.pack(pady=20)
 
-#created a function button_clicked
+#created a function button_clicked which changes the label when clicked
 def button_clicked():
-    pass
+    status_label.config(
+        text="Status: Button Clicked!"
+    )
 
 window.mainloop()
