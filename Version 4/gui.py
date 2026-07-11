@@ -29,5 +29,9 @@ window.geometry("700x600")
 #created a frame and gave it the variable frame_one
 frame_one = tk.Frame(window)
 
+# a label Trade Pair
+label_one = tk.Label(frame_one, text="Trade Pair")
+label_one.pack()
+
 # tto keep the window always running
 window.mainloop()
