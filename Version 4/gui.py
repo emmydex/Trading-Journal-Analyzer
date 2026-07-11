@@ -14,4 +14,8 @@ button_frame.pack()
 stats_frame = tk.Frame(window)
 stats_frame.pack()
 
+#Table Frame
+table_frame = tk.Frame(window)
+table_frame.pack()
+
 window.mainloop()
