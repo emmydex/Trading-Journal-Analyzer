@@ -24,7 +24,10 @@ window = tk.Tk()
 #created the title
 window.title("Trading Journal Analyzer V4")
 #set the window size
-window.geometry("900x600")
+window.geometry("700x600")
+
+#created a frame and gave it the variable frame_one
+frame_one = tk.Frame(window)
 
 # tto keep the window always running
 window.mainloop()
