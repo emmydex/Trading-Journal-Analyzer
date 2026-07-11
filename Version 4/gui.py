@@ -28,10 +28,22 @@ window.geometry("700x600")
 
 #created a frame and gave it the variable frame_one
 frame_one = tk.Frame(window)
+frame_one.pack()
 
 # a label Trade Pair
 label_one = tk.Label(frame_one, text="Trade Pair")
 label_one.pack()
+
+# an entry widget
+entry_one = tk.Entry(frame_one)
+entry_one.pack()
+
+#a button widget
+button_one = tk.Button(frame_one, text="Show Pair")
+button_one.pack()
+
+# another label
+label_two = tk.Label(frame_one, text="Selected Pair")
 
 # tto keep the window always running
 window.mainloop()
