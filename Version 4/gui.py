@@ -21,6 +21,10 @@ import tkinter as tk
 # creating the window
 window = tk.Tk()
 
+#created the title
+window.title("Trading Journal Analyzer V4")
+#set the window size
+window.geometry("900x600")
 
 # tto keep the window always running
 window.mainloop()
