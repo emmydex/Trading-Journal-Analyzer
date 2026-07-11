@@ -38,8 +38,11 @@ label_one.pack()
 entry_one = tk.Entry(frame_one)
 entry_one.pack()
 
+def read_text():
+    entry_one.get()
+
 #a button widget
-button_one = tk.Button(frame_one, text="Show Pair")
+button_one = tk.Button(frame_one, text="Show Pair", command=read_text)
 button_one.pack()
 
 # another label
