@@ -16,3 +16,7 @@
 #Selected Pair: EURUSD
 
 #(or whatever the user typed.)
+import tkinter as tk
+
+# creating the window
+window = tk.Tk()
