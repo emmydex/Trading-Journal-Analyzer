@@ -1,32 +1,18 @@
-import tkinter as tk
-# running a demo
 
-window = tk.Tk()
-window.title("Trading Journal Analyzer V4")
-window.geometry("900x600")
- #creating the frame structure
+#Requirements
+#Create the window.
+#Set the title to Trading Journal Analyzer V4.
+#Set the window size.
+#Create one frame.
+#Inside the frame create:
+#A label that says Trade Pair
+#An Entry widget
+#A button labeled Show Pair
+#A label that initially says Selected Pair:
+#When the button is clicked:
+#Read the Entry using .get()
+#Update the last label using .config()
+#It should become:
+#Selected Pair: EURUSD
 
- #Button frame
-button_frame = tk.Frame(window)
-button_frame.pack()
-
-# Statistics Frame
-stats_frame = tk.Frame(window)
-stats_frame.pack(pady=20)
-
-#adding a entry widget
-entry = tk.Entry(window)
-entry.pack(pady=20)
-
-tk.Label(stats_frame, text="Total Trades").grid(row=0, column=0)
-tk.Label(stats_frame, text="0").grid(row=0, column=1)
-tk.Label(stats_frame, text="Winning Trades").grid(row=1, column=0)
-tk.Label(stats_frame, text="0").grid(row=1, column= 1)
-tk.Label(stats_frame, text="Losing Trades").grid(row=2, column=0)
-tk.Label(stats_frame, text="0").grid(row=2, column=1)
- 
-#Table Frame
-table_frame = tk.Frame(window)
-table_frame.pack()
-
-window.mainloop()
+#(or whatever the user typed.)
