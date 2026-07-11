@@ -20,3 +20,7 @@ import tkinter as tk
 
 # creating the window
 window = tk.Tk()
+
+
+# tto keep the window always running
+window.mainloop()
