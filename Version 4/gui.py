@@ -12,8 +12,15 @@ button_frame.pack()
 
 # Statistics Frame
 stats_frame = tk.Frame(window)
-stats_frame.pack()
+stats_frame.pack(pady=20)
 
+tk.Label(stats_frame, text="Total Trades").grid(row=0, column=0)
+tk.Label(stats_frame, text="0").grid(row=0, column=1)
+tk.Label(stats_frame, text="Winning Trades").grid(row=1, column=0)
+tk.Label(stats_frame, text="0").grid(row=1, column= 1)
+tk.Label(stats_frame, text="Losing Trades").grid(row=2, column=0)
+tk.Label(stats_frame, text="0").grid(row=2, column=1)
+ 
 #Table Frame
 table_frame = tk.Frame(window)
 table_frame.pack()
