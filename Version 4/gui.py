@@ -87,7 +87,19 @@ losing_trades_value = tk.Label(stats_frame, text="0")
 losing_trades_value.grid(row=2, column=1)
 
 #Breakeven Trades:   0
+breakeven_trades = tk.Label(stats_frame, text="BreakEven Trades: ")
+breakeven_trades.grid(row=3, column=0)
+
+breakeven_trades_value = tk.Label(stats_frame, text="0")
+breakeven_trades_value.grid(row=3, column=1)
+
 #Win Rate:           0%
+win_rate = tk.Label(stats_frame, text="Win Rate: ")
+win_rate.grid(row=4, column=0)
+
+win_rate_value = tk.Label(stats_frame, text="0%")
+win_rate_value.grid(row=4, column=1)
+
 #Total Profit:       $0
 #Average Profit:     $0
 
