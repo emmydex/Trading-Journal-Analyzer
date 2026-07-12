@@ -54,5 +54,17 @@ button_one.pack()
 label_two = tk.Label(frame_one, text="Selected Pair")
 label_two.pack()
 
+#created the button_frame
+button_frame = tk.Frame(window)
+button_frame.pack()
+
+#import CSV button
+import_button = tk.Button(button_frame, text="Import CSV")
+import_button.pack(side="left")
+
+#Analyze Button
+analyze_button = tk.Button(button_frame, text="Analyze")
+analyze_button.pack(side="left")
+
 # tto keep the window always running
 window.mainloop()
