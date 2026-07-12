@@ -1,25 +1,15 @@
 
-#Requirements
-#Create the window.
-#Set the title to Trading Journal Analyzer V4.
-#Set the window size.
-#Create one frame.
-#Inside the frame create:
-#A label that says Trade Pair
-#An Entry widget
-#A button labeled Show Pair
-#A label that initially says Selected Pair:
-#When the button is clicked:
-#Read the Entry using .get()
-#Update the last label using .config()
-#It should become:
-#Selected Pair: EURUSD
-#create the button frame
-# add the import CSV button
-#add the Analyze button
-#add the Clear button
+#Requirements 12/7/2026
+#Create the statistics frame
 
-#(or whatever the user typed.)
+#Total Trades:       0
+#Winning Trades:     0
+#Losing Trades:      0
+#Breakeven Trades:   0
+#Win Rate:           0%
+#Total Profit:       $0
+#Average Profit:     $0
+
 import tkinter as tk
 
 # creating the window
