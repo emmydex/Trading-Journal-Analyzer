@@ -60,5 +60,21 @@ analyze_button.pack(side="left")
 clear_button = tk.Button(button_frame, text="Clear")
 clear_button.pack(side="left")
 
+# creating the stats_frame
+stats_frame = tk.Frame(window)
+stats_frame.pack()
+
+#Total Trades:       0
+total_trades = tk.Label(stats_frame, text="Total Trades")
+total_trades.grid(row=0, column=0)
+
+
+#Winning Trades:     0
+#Losing Trades:      0
+#Breakeven Trades:   0
+#Win Rate:           0%
+#Total Profit:       $0
+#Average Profit:     $0
+
 # tto keep the window always running
 window.mainloop()
