@@ -68,6 +68,9 @@ stats_frame.pack()
 total_trades = tk.Label(stats_frame, text="Total Trades")
 total_trades.grid(row=0, column=0)
 
+total_trades_value = tk.Label(stats_frame, text="0")
+total_trades_value.grid(row=0, column=1)
+
 
 #Winning Trades:     0
 #Losing Trades:      0
