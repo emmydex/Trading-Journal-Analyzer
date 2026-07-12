@@ -39,7 +39,8 @@ entry_one = tk.Entry(frame_one)
 entry_one.pack()
 
 def read_text():
-    entry_one.get()
+   value = entry_one.get()
+   label_two.config(text=f"Selected Pair:{value}")
 
 #a button widget
 button_one = tk.Button(frame_one, text="Show Pair", command=read_text)
@@ -47,6 +48,7 @@ button_one.pack()
 
 # another label
 label_two = tk.Label(frame_one, text="Selected Pair")
+label_two.pack()
 
 # tto keep the window always running
 window.mainloop()
