@@ -22,7 +22,7 @@ window.geometry("700x600")
 
 #created a frame and gave it the variable frame_one
 frame_one = tk.Frame(window)
-frame_one.pack()
+frame_one.pack(pady=20)
 
 # a label Trade Pair
 label_one = tk.Label(frame_one, text="Trade Pair")
@@ -46,7 +46,7 @@ label_two.pack()
 
 #created the button_frame
 button_frame = tk.Frame(window)
-button_frame.pack()
+button_frame.pack(pady=20)
 
 #import CSV button
 import_button = tk.Button(button_frame, text="Import CSV")
@@ -62,57 +62,57 @@ clear_button.pack(side="left")
 
 # creating the stats_frame
 stats_frame = tk.Frame(window)
-stats_frame.pack()
+stats_frame.pack(pady=20)
 
 #Total Trades:       0
 total_trades = tk.Label(stats_frame, text="Total Trades: ")
-total_trades.grid(row=0, column=0)
+total_trades.grid(row=0, column=0, pady=5, padx=10, sticky="w")
 
 total_trades_value = tk.Label(stats_frame, text="0")
-total_trades_value.grid(row=0, column=1)
+total_trades_value.grid(row=0, column=1,  pady=5, padx=10, sticky="w")
 
 
 #Winning Trades:     0
 winning_trades = tk.Label(stats_frame, text="Winning Trades: ")
-winning_trades.grid(row=1, column=0)
+winning_trades.grid(row=1, column=0,  pady=5, padx=10, sticky="w")
 
 winning_trades_value = tk.Label(stats_frame, text="0")
-winning_trades_value.grid(row=1, column=1)
+winning_trades_value.grid(row=1, column=1,  pady=5, padx=10, sticky="w")
 
 #Losing Trades:      0
 losing_trades = tk.Label(stats_frame, text="Losing Trades: ")
-losing_trades.grid(row=2, column=0)
+losing_trades.grid(row=2, column=0,  pady=5, padx=10, sticky="w")
 
 losing_trades_value = tk.Label(stats_frame, text="0")
-losing_trades_value.grid(row=2, column=1)
+losing_trades_value.grid(row=2, column=1,  pady=5, padx=10, sticky="w")
 
 #Breakeven Trades:   0
 breakeven_trades = tk.Label(stats_frame, text="BreakEven Trades: ")
-breakeven_trades.grid(row=3, column=0)
+breakeven_trades.grid(row=3, column=0,  pady=5, padx=10, sticky="w")
 
 breakeven_trades_value = tk.Label(stats_frame, text="0")
-breakeven_trades_value.grid(row=3, column=1)
+breakeven_trades_value.grid(row=3, column=1,  pady=5, padx=10, sticky="w")
 
 #Win Rate:           0%
 win_rate = tk.Label(stats_frame, text="Win Rate: ")
-win_rate.grid(row=4, column=0)
+win_rate.grid(row=4, column=0,  pady=5, padx=10, sticky="w")
 
 win_rate_value = tk.Label(stats_frame, text="0%")
-win_rate_value.grid(row=4, column=1)
+win_rate_value.grid(row=4, column=1,  pady=5, padx=10, sticky="w")
 
 #Total Profit:       $0
-total_profit = tk.Label(stats_frame, text="Total profit: ")
-total_profit.grid(row=5, column=0)
+total_profit = tk.Label(stats_frame, text="Total Profit: ")
+total_profit.grid(row=5, column=0,  pady=5, padx=10, sticky="w")
 
 total_profit_value = tk.Label(stats_frame, text="$0")
-total_profit_value.grid(row=5, column=1)
+total_profit_value.grid(row=5, column=1,  pady=5, padx=10, sticky="w")
 
 #Average Profit:     $0
-average_profit = tk.Label(stats_frame, text="Average profit: ")
-average_profit.grid(row=6, column=0)
+average_profit = tk.Label(stats_frame, text="Average Profit: ")
+average_profit.grid(row=6, column=0,  pady=5, padx=10, sticky="w")
 
 average_profit_value = tk.Label(stats_frame, text="$0")
-average_profit_value.grid(row=6, column=1)
+average_profit_value.grid(row=6, column=1,  pady=5, padx=10, sticky="w")
 
 # tto keep the window always running
 window.mainloop()
