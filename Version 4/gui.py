@@ -66,5 +66,9 @@ import_button.pack(side="left")
 analyze_button = tk.Button(button_frame, text="Analyze")
 analyze_button.pack(side="left")
 
+# clear button
+clear_button = tk.Button(button_frame, text="Clear")
+clear_button.pack(side="left")
+
 # tto keep the window always running
 window.mainloop()
