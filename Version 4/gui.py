@@ -14,6 +14,10 @@
 #Update the last label using .config()
 #It should become:
 #Selected Pair: EURUSD
+#create the button frame
+# add the import CSV button
+#add the Analyze button
+#add the Clear button
 
 #(or whatever the user typed.)
 import tkinter as tk
@@ -40,7 +44,7 @@ entry_one.pack()
 
 def read_text():
    value = entry_one.get()
-   label_two.config(text=f"Selected Pair:{value}")
+   label_two.config(text=f"Selected Pair:  {value}")
 
 #a button widget
 button_one = tk.Button(frame_one, text="Show Pair", command=read_text)
