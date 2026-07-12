@@ -65,7 +65,7 @@ stats_frame = tk.Frame(window)
 stats_frame.pack()
 
 #Total Trades:       0
-total_trades = tk.Label(stats_frame, text="Total Trades")
+total_trades = tk.Label(stats_frame, text="Total Trades: ")
 total_trades.grid(row=0, column=0)
 
 total_trades_value = tk.Label(stats_frame, text="0")
@@ -73,7 +73,19 @@ total_trades_value.grid(row=0, column=1)
 
 
 #Winning Trades:     0
+winning_trades = tk.Label(stats_frame, text="Winning Trades: ")
+winning_trades.grid(row=1, column=0)
+
+winning_trades_value = tk.Label(stats_frame, text="0")
+winning_trades_value.grid(row=1, column=1)
+
 #Losing Trades:      0
+losing_trades = tk.Label(stats_frame, text="Losing Trades: ")
+losing_trades.grid(row=2, column=0)
+
+losing_trades_value = tk.Label(stats_frame, text="0")
+losing_trades_value.grid(row=2, column=1)
+
 #Breakeven Trades:   0
 #Win Rate:           0%
 #Total Profit:       $0
