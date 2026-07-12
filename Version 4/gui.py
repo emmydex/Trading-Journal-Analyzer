@@ -108,6 +108,11 @@ total_profit_value = tk.Label(stats_frame, text="$0")
 total_profit_value.grid(row=5, column=1)
 
 #Average Profit:     $0
+average_profit = tk.Label(stats_frame, text="Average profit: ")
+average_profit.grid(row=6, column=0)
+
+average_profit_value = tk.Label(stats_frame, text="$0")
+average_profit_value.grid(row=6, column=1)
 
 # tto keep the window always running
 window.mainloop()
