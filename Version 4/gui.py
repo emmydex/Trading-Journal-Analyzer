@@ -101,6 +101,12 @@ win_rate_value = tk.Label(stats_frame, text="0%")
 win_rate_value.grid(row=4, column=1)
 
 #Total Profit:       $0
+total_profit = tk.Label(stats_frame, text="Total profit: ")
+total_profit.grid(row=5, column=0)
+
+total_profit_value = tk.Label(stats_frame, text="$0")
+total_profit_value.grid(row=5, column=1)
+
 #Average Profit:     $0
 
 # tto keep the window always running
