@@ -11,7 +11,7 @@
 #Average Profit:     $0
 
 import tkinter as tk
-
+from tkinter import filedialog
 # creating the window
 window = tk.Tk()
 
@@ -33,6 +33,7 @@ entry_one = tk.Entry(frame_one)
 entry_one.pack()
 
 def read_text():
+   
    value = entry_one.get()
    label_two.config(text=f"Selected Pair:  {value}")
 
