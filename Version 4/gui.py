@@ -32,6 +32,7 @@ label_one.pack()
 entry_one = tk.Entry(frame_one)
 entry_one.pack()
 
+#the button function
 def read_text():
    
    value = entry_one.get()
