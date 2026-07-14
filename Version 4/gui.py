@@ -54,7 +54,9 @@ def file_import():
    file_browse = filedialog.askopenfile(initialdir="/", 
    title="Select a file", filetypes=[("All files", "*.*")]
    )
+   output = file_browse.get()
    return file_browse
+   print(output)
 
 #import CSV button
 import_button = tk.Button(button_frame, text="Import CSV", command=file_import)
