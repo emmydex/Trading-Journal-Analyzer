@@ -51,12 +51,11 @@ button_frame = tk.Frame(window)
 button_frame.pack(pady=20)
 
 def file_import():
-   file_browse = filedialog.askopenfile(initialdir="/", 
+   file_browse = filedialog.askopenfilename(initialdir="/", 
    title="Select a file", filetypes=[("All files", "*.*")]
    )
-   output = file_browse.get()
-   return file_browse
-   print(output)
+   
+   print(f"file selected path: {file_browse}")
 
 #import CSV button
 import_button = tk.Button(button_frame, text="Import CSV", command=file_import)
