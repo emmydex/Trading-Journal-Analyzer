@@ -52,7 +52,7 @@ button_frame.pack(pady=20)
 
 def file_import():
    file_browse = filedialog.askopenfilename(initialdir="/", 
-   title="Select a file", filetypes=[("All files", "*.*")]
+   title="Select a file", filetypes=[("CSV FILE", "*.*")]
    )
    
    print(f"file selected path: {file_browse}")
