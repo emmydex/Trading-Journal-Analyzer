@@ -50,8 +50,11 @@ label_two.pack()
 button_frame = tk.Frame(window)
 button_frame.pack(pady=20)
 
+def file_import():
+   file_browse = filedialog.askopenfile
+
 #import CSV button
-import_button = tk.Button(button_frame, text="Import CSV")
+import_button = tk.Button(button_frame, text="Import CSV", command=file_import)
 import_button.pack(side="left")
 
 #Analyze Button
