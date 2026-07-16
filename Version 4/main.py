@@ -14,4 +14,5 @@ def main():
     # print_header()
     print_report(metrics,pair_metrics) 
 
-main()
+if __name__ == "__main__":
+    main()
