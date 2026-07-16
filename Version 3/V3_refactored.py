@@ -246,6 +246,5 @@ def main():
     # print_header()
     print_report(metrics,pair_metrics) 
 
- 
-if __name__ == "__main__" :
-    main()
+
+main()
