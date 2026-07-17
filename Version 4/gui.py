@@ -50,6 +50,7 @@ label_two.pack()
 button_frame = tk.Frame(window)
 button_frame.pack(pady=20)
 
+# created a global variable
 file_browse = ""
 
 def file_import():
