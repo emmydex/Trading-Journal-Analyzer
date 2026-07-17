@@ -70,7 +70,7 @@ import_button.pack(side="left")
 
 def analyze():
    trades = csv_loader.load_trades(file_browse)
-   metrics = calculations.calculate_metrics
+   metrics = calculations.calculate_metrics(trades)
    print(metrics)
 
 #Analyze Button
