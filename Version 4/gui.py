@@ -50,6 +50,8 @@ label_two.pack()
 button_frame = tk.Frame(window)
 button_frame.pack(pady=20)
 
+file_browse = ""
+
 def file_import():
    global file_browse
    file_browse = filedialog.askopenfilename(initialdir="/", 
