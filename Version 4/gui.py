@@ -12,6 +12,8 @@
 
 import tkinter as tk
 from tkinter import filedialog
+import csv_loader
+import calculations
 # creating the window
 window = tk.Tk()
 
@@ -67,7 +69,9 @@ import_button = tk.Button(button_frame, text="Import CSV", command=file_import)
 import_button.pack(side="left")
 
 def analyze():
-   print(file_browse)
+   trades = csv_loader.load_trades(file_browse)
+   metrics = calculations.calculate_metrics
+   print(metrics)
 
 #Analyze Button
 analyze_button = tk.Button(button_frame, text="Analyze", command=analyze)
