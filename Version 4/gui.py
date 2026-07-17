@@ -65,8 +65,11 @@ def file_import():
 import_button = tk.Button(button_frame, text="Import CSV", command=file_import)
 import_button.pack(side="left")
 
+def analyze():
+   print(file_browse)
+
 #Analyze Button
-analyze_button = tk.Button(button_frame, text="Analyze", command=file_browse)
+analyze_button = tk.Button(button_frame, text="Analyze", command=analyze)
 analyze_button.pack(side="left")
 
 # clear button
