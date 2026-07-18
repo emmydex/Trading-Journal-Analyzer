@@ -58,9 +58,7 @@ def file_import():
 import_button = tk.Button(button_frame, text="Import CSV", command=file_import)
 import_button.pack(side="left")
 
-def analyze():
-   trades = csv_loader.load_trades(file_browse)
-   metrics = calculations.calculate_metrics(trades)
+def update_statistics(metrics):
    total_trades_value.config(text=metrics["total_trades"])
    winning_trades_value.config(text=metrics["winning_trades"])
    losing_trades_value.config(text=metrics["losing_trades"])
@@ -68,6 +66,15 @@ def analyze():
    win_rate_value.config(text=f"{metrics['win_rate']:.2f}%")
    total_profit_value.config(text=f"${metrics['total_profit']:.2f}")
    average_profit_value.config(text=f"${metrics['average_profit']:.2f}")
+
+
+# function for the analyze_button
+def analyze():
+   trades = csv_loader.load_trades(file_browse)
+   metrics = calculations.calculate_metrics(trades)
+
+   update_statistics(metrics)
+
    
 
 #Analyze Button
