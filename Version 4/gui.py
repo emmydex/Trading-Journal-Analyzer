@@ -72,6 +72,8 @@ def analyze():
    trades = csv_loader.load_trades(file_browse)
    metrics = calculations.calculate_metrics(trades)
    total_trades_value.config(text=metrics["total_trades"])
+   winning_trades_value.config(text=metrics["winning_trades"])
+   losing_trades_value.config(text=metrics["losing_trades"])
    print(metrics)
 
 #Analyze Button
