@@ -74,6 +74,10 @@ def analyze():
    total_trades_value.config(text=metrics["total_trades"])
    winning_trades_value.config(text=metrics["winning_trades"])
    losing_trades_value.config(text=metrics["losing_trades"])
+   breakeven_trades_value.config(text=metrics["breakeven_trades"])
+   win_rate_value.config(text=metrics["win_rate"])
+   total_profit_value.config(text=metrics["total_profit"])
+   average_profit_value.config(text=metrics["average_profit"])
    print(metrics)
 
 #Analyze Button
