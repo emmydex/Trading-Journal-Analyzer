@@ -71,6 +71,7 @@ import_button.pack(side="left")
 def analyze():
    trades = csv_loader.load_trades(file_browse)
    metrics = calculations.calculate_metrics(trades)
+   total_trades_value.config(text=metrics["total_trades"])
    print(metrics)
 
 #Analyze Button
@@ -96,7 +97,7 @@ total_trades_value.grid(row=0, column=1,  pady=5, padx=10, sticky="w")
 #Winning Trades:     0
 winning_trades = tk.Label(stats_frame, text="Winning Trades: ")
 winning_trades.grid(row=1, column=0,  pady=5, padx=10, sticky="w")
-
+ 
 winning_trades_value = tk.Label(stats_frame, text="0")
 winning_trades_value.grid(row=1, column=1,  pady=5, padx=10, sticky="w")
 
