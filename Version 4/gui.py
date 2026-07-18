@@ -1,4 +1,15 @@
 
+# refactor the GUI.
+
+# Instead of having one long gui.py, organize it into small, well named functions such as:
+
+# create_top_frame()
+# create_button_frame()
+# create_statistics_frame()
+# update_statistics(metrics)
+# clear_statistics()
+
+
 
 import tkinter as tk
 from tkinter import filedialog
