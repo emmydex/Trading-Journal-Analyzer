@@ -1,14 +1,4 @@
 
-#Requirements 12/7/2026
-#Create the statistics frame
-
-#Total Trades:       0
-#Winning Trades:     0
-#Losing Trades:      0
-#Breakeven Trades:   0
-#Win Rate:           0%
-#Total Profit:       $0
-#Average Profit:     $0
 
 import tkinter as tk
 from tkinter import filedialog
@@ -29,7 +19,7 @@ frame_one.pack(pady=20)
 # a label Trade Pair
 label_one = tk.Label(frame_one, text="Trade Pair")
 label_one.pack()
-
+ 
 # an entry widget
 entry_one = tk.Entry(frame_one)
 entry_one.pack()
@@ -75,7 +65,7 @@ def analyze():
    winning_trades_value.config(text=metrics["winning_trades"])
    losing_trades_value.config(text=metrics["losing_trades"])
    breakeven_trades_value.config(text=metrics["breakeven_trades"])
-   win_rate_value.config(text=metrics["win_rate"])
+   win_rate_value.config(text=f"%{metrics['win_rate']:.2f}")
    total_profit_value.config(text=metrics["total_profit"])
    average_profit_value.config(text=metrics["average_profit"])
    
