@@ -23,31 +23,36 @@ window.title("Trading Journal Analyzer V4")
 #set the window size
 window.geometry("700x600")
 
+def create_top_frame():
 #created a frame and gave it the variable frame_one
-frame_one = tk.Frame(window)
-frame_one.pack(pady=20)
+   frame_one = tk.Frame(window)
+   frame_one.pack(pady=20)
 
 # a label Trade Pair
-label_one = tk.Label(frame_one, text="Trade Pair")
-label_one.pack()
+   label_one = tk.Label(frame_one, text="Trade Pair")
+   label_one.pack()
  
 # an entry widget
-entry_one = tk.Entry(frame_one)
-entry_one.pack()
+   entry_one = tk.Entry(frame_one)
+   entry_one.pack()
 
 #the button function
-def read_text():
-   
-   value = entry_one.get()
-   label_two.config(text=f"Selected Pair:  {value}")
+   def read_text():
+      
+      value = entry_one.get()
+      label_two.config(text=f"Selected Pair:  {value}")
 
-#a button widget
-button_one = tk.Button(frame_one, text="Show Pair", command=read_text)
-button_one.pack()
+   #a button widget
+   button_one = tk.Button(frame_one, text="Show Pair", command=read_text)
+   button_one.pack()
 
-# another label
-label_two = tk.Label(frame_one, text="Selected Pair")
-label_two.pack()
+   # another label
+   label_two = tk.Label(frame_one, text="Selected Pair")
+   label_two.pack()
+
+create_top_frame()
+
+
 
 #created the button_frame
 button_frame = tk.Frame(window)
