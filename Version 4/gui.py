@@ -58,7 +58,7 @@ file_browse = ""
 def file_import():
    global file_browse
    file_browse = filedialog.askopenfilename(initialdir="/", 
-   title="Select a file", filetypes=[("CSV FILE", "*.*")]
+   title="Select a file", filetypes=[("CSV FILE", "*.csv")]
    )
    
    print(f"file selected path: {file_browse}")
@@ -78,7 +78,7 @@ def analyze():
    win_rate_value.config(text=metrics["win_rate"])
    total_profit_value.config(text=metrics["total_profit"])
    average_profit_value.config(text=metrics["average_profit"])
-   print(metrics)
+   
 
 #Analyze Button
 analyze_button = tk.Button(button_frame, text="Analyze", command=analyze)
