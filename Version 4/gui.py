@@ -15,7 +15,11 @@ import tkinter as tk
 from tkinter import filedialog
 import csv_loader
 import calculations
-# creating the window
+ 
+# created a global variable
+file_browse = ""
+
+# creating the window  
 window = tk.Tk()
 
 #created the title
@@ -58,8 +62,7 @@ def create_button_frame():
    button_frame = tk.Frame(window)
    button_frame.pack(pady=20)
 
-   # created a global variable
-   file_browse = ""
+
 
    def file_import():
       global file_browse
