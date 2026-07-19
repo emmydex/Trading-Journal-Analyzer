@@ -16,6 +16,8 @@ window.title("Trading Journal Analyzer V4")
 #set the window size
 window.geometry("700x600")
 
+
+# function for the top frame
 def create_top_frame():
 #created a frame and gave it the variable frame_one
    frame_one = tk.Frame(window)
@@ -45,7 +47,7 @@ def create_top_frame():
 
 create_top_frame()
 
-
+# function for the button_frame
 def create_button_frame():
    #created the button_frame
    button_frame = tk.Frame(window)
@@ -88,7 +90,7 @@ def create_button_frame():
 
 create_button_frame()
 
-
+# function for the statistics_frame
 def create_statistics_frame():
    # creating the stats_frame
    stats_frame = tk.Frame(window)
@@ -150,6 +152,7 @@ def create_statistics_frame():
 
 stats_labels = create_statistics_frame()
 
+# function for the update_statistics
 def update_statistics(metrics):
    stats_labels['total_trades_value'].config(text=metrics["total_trades"])
    stats_labels['winning_trades_value'].config(text=metrics["winning_trades"])
