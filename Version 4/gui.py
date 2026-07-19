@@ -3,10 +3,10 @@
 
 # Instead of having one long gui.py, organize it into small, well named functions such as:
 
-# create_top_frame()
-# create_button_frame()
-# create_statistics_frame()
-# update_statistics(metrics)
+# create_top_frame() done
+# create_button_frame() done
+# create_statistics_frame() done
+# update_statistics(metrics) done
 # clear_statistics()
 
 
@@ -169,6 +169,9 @@ def update_statistics(metrics):
    stats_labels['win_rate_value'].config(text=f"{metrics['win_rate']:.2f}%")
    stats_labels['total_profit_value'].config(text=f"${metrics['total_profit']:.2f}")
    stats_labels['average_profit_value'].config(text=f"${metrics['average_profit']:.2f}")
+
+
+
 
 # tto keep the window always running
 window.mainloop()
