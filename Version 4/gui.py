@@ -131,7 +131,7 @@ def create_statistics_frame():
    breakeven_trades.grid(row=3, column=0,  pady=5, padx=10, sticky="w")
 
    labels['breakeven_trades_value'] = tk.Label(stats_frame, text="0")
-   labels['breakeven_trades_values'].grid(row=3, column=1,  pady=5, padx=10, sticky="w")
+   labels['breakeven_trades_value'].grid(row=3, column=1,  pady=5, padx=10, sticky="w")
 
    #Win Rate:           0%
    win_rate = tk.Label(stats_frame, text="Win Rate: ")
