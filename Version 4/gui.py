@@ -170,7 +170,8 @@ def update_statistics(metrics):
    stats_labels['total_profit_value'].config(text=f"${metrics['total_profit']:.2f}")
    stats_labels['average_profit_value'].config(text=f"${metrics['average_profit']:.2f}")
 
-
+def clear_statistics():
+   pass
 
 
 # tto keep the window always running
