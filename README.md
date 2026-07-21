@@ -16,3 +16,13 @@
 </div>
 
 ---
+
+# 📖 Overview
+
+Trading Journal is a desktop application built with Python to help traders review their performance, identify weaknesses, and improve through data-driven analysis.
+
+Instead of simply displaying trading results, the application focuses on helping traders develop consistency by providing meaningful performance metrics in a clean, modern interface.
+
+> **Analyze → Learn → Improve**
+
+---
