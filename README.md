@@ -26,3 +26,25 @@ Instead of simply displaying trading results, the application focuses on helping
 > **Analyze → Learn → Improve**
 
 ---
+
+# ✨ Features
+
+## 📂 Trade Import
+
+- Import CSV trading journals
+- Automatic trade loading
+- Data validation
+
+---
+
+## 📊 Performance Analytics
+
+- Total Trades
+- Winning Trades
+- Losing Trades
+- Breakeven Trades
+- Win Rate
+- Total Profit
+- Average Profit
+
+---
