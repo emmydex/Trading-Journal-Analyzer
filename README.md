@@ -106,3 +106,34 @@ Trading Journal/
 │
 └── README.md
 ```
+---
+
+# 🎨 Design System
+
+Trading Journal follows its own design language.
+
+## Theme
+
+**Noir**
+
+Minimal
+
+Professional
+
+Distraction-free
+
+---
+
+## Brand Colors
+
+| Purpose | Color |
+|----------|--------|
+| Background | `#0A0A0A` |
+| Surface | `#151515` |
+| Elevated | `#1E1E1E` |
+| Border | `#2A2A2A` |
+| Primary Text | `#FFFFFF` |
+| Secondary Text | `#B3B3B3` |
+| Signature Emerald | `#2E8B57` |
+
+---
