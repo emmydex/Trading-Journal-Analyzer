@@ -191,3 +191,39 @@ Each module has one responsibility.
 This keeps the application scalable and easy to maintain.
 
 ---
+
+# 🚀 Roadmap
+
+## ✅ Completed
+
+- CSV Import
+- Performance Metrics
+- Pair Performance
+- Risk Metrics
+- Statistics Dashboard
+- Modular Refactoring
+
+---
+
+## 🔄 In Progress
+
+- Modern Desktop UI
+- Application Branding
+- Custom Design System
+- Logo Integration
+
+---
+
+## 🔜 Planned
+
+- Interactive Charts
+- Trade History Table
+- Search & Filters
+- Export Reports
+- Theme Settings
+- SQLite Database
+- Performance Graphs
+- Risk Dashboard
+- Position Size Calculator
+
+---
