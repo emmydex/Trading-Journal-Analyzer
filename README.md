@@ -48,3 +48,26 @@ Instead of simply displaying trading results, the application focuses on helping
 - Average Profit
 
 ---
+
+## 📈 Risk Metrics
+
+- Gross Profit
+- Gross Loss
+- Profit Factor
+- Average Win
+- Average Loss
+
+---
+
+## 📉 Trade Analysis
+
+- Best Trade
+- Worst Trade
+- Most Traded Pair
+- Pair Performance
+- Current Win Streak
+- Current Loss Streak
+- Longest Win Streak
+- Longest Loss Streak
+
+---
