@@ -280,4 +280,6 @@ Trading Journal is intended to evolve into a complete trading analytics platform
 
 Designed and developed using Python.
 
+Creator -- olúwáfẹ́mi🍀
+
 </div>
