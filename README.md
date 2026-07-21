@@ -137,3 +137,57 @@ Distraction-free
 | Signature Emerald | `#2E8B57` |
 
 ---
+
+## Typography
+
+Primary Font
+
+- Inter
+
+Logo
+
+- Space Grotesk
+
+Tagline
+
+> Analyze • Learn • Improve
+
+---
+
+# 🧠 Engineering Principles
+
+This project follows a modular architecture.
+
+```
+CSV
+        │
+        ▼
+
+csv_loader.py
+
+        │
+        ▼
+
+calculations.py
+
+        │
+        ▼
+
+GUI
+
+        │
+        ▼
+
+User
+```
+
+Each module has one responsibility.
+
+- CSV Loading
+- Metric Calculations
+- GUI
+- Reporting
+
+This keeps the application scalable and easy to maintain.
+
+---
