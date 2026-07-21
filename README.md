@@ -71,3 +71,17 @@ Instead of simply displaying trading results, the application focuses on helping
 - Longest Loss Streak
 
 ---
+
+## 🖥 Desktop Interface
+
+Built using Tkinter with a custom design system.
+
+Current Version includes:
+
+- Import CSV
+- Analyze
+- Statistics Dashboard
+- Modern layout
+- Modular architecture
+
+---
