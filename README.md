@@ -227,3 +227,57 @@ This keeps the application scalable and easy to maintain.
 - Position Size Calculator
 
 ---
+
+# 📸 Screenshots
+
+Coming Soon
+
+---
+
+# 🛠 Built With
+
+- Python
+- Tkinter
+- CSV
+- Git
+- GitHub
+
+---
+
+# 📚 What I Learned
+
+This project has been a practical exercise in learning:
+
+- Consistency is key oluwafemi
+- Modular software architecture
+- GUI development with Tkinter
+- Data analysis
+- Refactoring
+- Git & GitHub workflow
+- UI/UX design
+- Desktop application development
+
+---
+
+# 🎯 Future Vision
+
+Trading Journal is intended to evolve into a complete trading analytics platform featuring:
+
+- Advanced dashboards
+- Risk management tools
+- Performance visualization
+- AI-assisted trade review
+- Database integration
+- Cloud synchronization
+
+---
+
+<div align="center">
+
+## 📔 Trading Journal
+
+### Analyze • Learn • Improve
+
+Designed and developed using Python.
+
+</div>
