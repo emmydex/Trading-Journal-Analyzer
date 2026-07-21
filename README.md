@@ -85,3 +85,24 @@ Current Version includes:
 - Modular architecture
 
 ---
+
+# 🏗 Project Structure
+
+```text
+Trading Journal/
+│
+├── gui.py
+├── main.py
+├── csv_loader.py
+├── calculations.py
+├── reports.py
+├── journal.csv
+│
+├── DEMO/
+│   ├── screenshots/
+├── assets/
+│   ├── logo.png
+│   └── icons/
+│
+└── README.md
+```
