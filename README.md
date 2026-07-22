@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img width="1920" src="icon_noir.svg" width="300" height="300"/>
+  <img width="1920" src="assets/logo/icon_noir.svg" width="300" height="300"/>
 </p>
 <h4 align="center">
 Analyze, Learn, Improve
