@@ -107,8 +107,22 @@ Trading Journal/
 ├── DEMO/
 │   ├── screenshots/
 ├── assets/
-│   ├── logo.png
-│   └── icons/
+│   ├── logo/
+│   │   ├── icon_noir.png
+│   │   ├── 
+│   │   └── icon_noir.svg
+│   │
+│   ├── screenshots/
+│   │   
+│   │
+│   └── ui/
+│       ├── 
+│       └── 
+│
+├── docs/
+│   ├── DESIGN_SYSTEM.md
+│   ├── ROADMAP.md
+│   └── CHANGELOG.md
 │
 └── README.md
 ```
