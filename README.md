@@ -1,5 +1,11 @@
 <div align="center">
 
+<p align="center">
+  <img width="1920" src="icon_noir.svg" width="300" height="300"/>
+</p>
+<h4 align="center">
+Analyze, Learn, Improve
+<h4/>
 # 📔 Trading Journal
 
 ### Analyze • Learn • Improve
