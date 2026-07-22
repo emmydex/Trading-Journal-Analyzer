@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <img width="1920" src="icon_noir.svg" width="300" height="300"/>
+  <img width="1920" src="assets/logo/icon_noir.svg" width="300" height="300"/>
 </p>
 <h4 align="center">
 Analyze, Learn, Improve
@@ -107,8 +107,22 @@ Trading Journal/
 ├── DEMO/
 │   ├── screenshots/
 ├── assets/
-│   ├── logo.png
-│   └── icons/
+│   ├── logo/
+│   │   ├── icon_noir.png
+│   │   ├── 
+│   │   └── icon_noir.svg
+│   │
+│   ├── screenshots/
+│   │   
+│   │
+│   └── ui/
+│       ├── 
+│       └── 
+│
+├── docs/
+│   ├── DESIGN_SYSTEM.md
+│   ├── ROADMAP.md
+│   └── CHANGELOG.md
 │
 └── README.md
 ```
