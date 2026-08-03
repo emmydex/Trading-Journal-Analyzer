@@ -253,8 +253,3 @@ Row layout: label left (`text-tertiary`, 11.5px), value/control right-aligned.
 
 ---
 
-## Notes for Figma Recreation
-- Build the 4 base panel/card styles (`panel`, `kpi-card`, `nav-item`, `pill/badge`) as **Figma components** first — nearly every section reuses them.
-- Set up **color styles** and **text styles** from the token tables above before laying out frames — this mirrors the CSS variable system used in the HTML build and will keep both frames (Cover + Dashboard) visually locked together.
-- The emerald progress bars (Pair/Session Performance, Risk Today) can all share one **auto-layout bar component** with a variable-width fill.
-- Icons are simple 1.6–2px stroke line icons (24×24 viewbox) — Feather/Lucide-style. Any icon set in that family will match.
