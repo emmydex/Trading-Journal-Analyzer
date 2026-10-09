@@ -8,7 +8,8 @@ from reports import print_report
     
 
 def main():
-    trades = load_trades("journal.csv")
+    # changed the csv file
+    trades = load_trades("3_month_data.csv")
     metrics = calculate_metrics(trades)
     pair_metrics = pair_performance(trades)
     # print_header()
