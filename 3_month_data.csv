@@ -1,4 +1,4 @@
-Time,Balance before,Balance after,Realized PnL (value),Realized PnL (currency),Action,pair,profit
+date,Balance before,Balance after,Realized PnL (value),Realized PnL (currency),Action,pair,profit
 2026-10-06 11:17:00,10002.263030565337,10001.246770565336,-1.0162600000003295,USD,"Close short position for symbol FOREXCOM:AUDUSD at price 0.69832 for 1666 units. Position AVG Price was 0.697710, currency: USD, rate: 1.000000, point value: 1.000000",AUDUSD,-1.0162600000003295
 2026-10-02 09:54:51,10010.033030565337,10002.263030565337,-7.770000000000437,USD,"Close long position for symbol FOREXCOM:SPX500 at price 7730.0 for 0.7 units. Position AVG Price was 7741.100000, currency: USD, rate: 1.000000, point value: 1.000000",SPX500,-7.770000000000437
 2026-10-02 09:51:39,10010.393030565338,10010.033030565337,-0.3600000000005821,USD,"Close long position for symbol FOREXCOM:SPX500 at price 7739.7 for 0.9 units. Position AVG Price was 7740.100000, currency: USD, rate: 1.000000, point value: 1.000000",SPX500,-0.3600000000005821
