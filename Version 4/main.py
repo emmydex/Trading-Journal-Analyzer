@@ -11,6 +11,8 @@ def main():
     # changed the csv file
     # there is an error
     # the .csv file is empty
+    # added the missing data
+    # new KeyError: 'pair'
     trades = load_trades("3_month_data.csv")
     metrics = calculate_metrics(trades)
     pair_metrics = pair_performance(trades)
