@@ -12,7 +12,7 @@ file_browse = ""
 window = tk.Tk()
 
 #created the title
-window.title("Trading Journal Analyzer V4")
+window.title("Trading Journal Analyzer V1")
 #set the window size
 window.geometry("700x600")
 
