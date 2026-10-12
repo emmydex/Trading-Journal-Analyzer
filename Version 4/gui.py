@@ -148,6 +148,13 @@ def create_statistics_frame():
    labels['average_profit_value'] = tk.Label(stats_frame, text="$0")
    labels['average_profit_value'].grid(row=6, column=1,  pady=5, padx=10, sticky="w")
 
+   # Gross Profit
+   gross_profit = tk.Label(stats_frame, text="Gross Profit: ")
+   gross_profit.grid(row=7, column=0, pady=5, padx=10, sticky="w")
+
+   labels['gross_profit_value'] = tk.Label(stats_frame, text="$0")
+   labels['gross_profit_value'].grid(row=7, column=1, pady=5, padx=10, sticky="w")
+
    return labels
 
 stats_labels = create_statistics_frame()
