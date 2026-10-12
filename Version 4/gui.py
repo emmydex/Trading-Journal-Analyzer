@@ -168,6 +168,7 @@ def update_statistics(metrics):
    stats_labels['win_rate_value'].config(text=f"{metrics['win_rate']:.2f}%")
    stats_labels['total_profit_value'].config(text=f"${metrics['total_profit']:.2f}")
    stats_labels['average_profit_value'].config(text=f"${metrics['average_profit']:.2f}")
+   stats_labels['gross_profit_value'].config(text=f"${metrics['gross_profit']:.2f}")
 
 def clear_statistics():
    pass
