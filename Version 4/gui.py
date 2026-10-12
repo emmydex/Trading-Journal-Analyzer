@@ -191,8 +191,8 @@ def update_statistics(metrics):
    stats_labels['average_profit_value'].config(text=f"${metrics['average_profit']:.2f}")
    stats_labels['gross_profit_value'].config(text=f"${metrics['gross_profit']:.2f}")
    stats_labels['gross_loss_value'].config(text=f"${metrics['gross_loss']:.2f}")
-   stats_labels['average_win_value'].config(text=f"{metrics['average_win_value']:.2f}")
-   stats_labels['average_loss_value'].config(text=f"{metrics['average_loss_value']:.2f}")
+   stats_labels['average_win_value'].config(text=f"{metrics['average_win']:.2f}")
+   stats_labels['average_loss_value'].config(text=f"{metrics['average_loss']:.2f}")
 
 def clear_statistics():
    pass
