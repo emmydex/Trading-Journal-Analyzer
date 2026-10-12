@@ -174,7 +174,7 @@ def create_statistics_frame():
    average_loss.grid(row=10, column=0, pady=5, padx=10, sticky="w")
 
    labels['average_loss_value'] = tk.Label(stats_frame, text=0)
-   labels['average_loss_value'].grid(row=10, pady=5, padx=10, sticky="w")
+   labels['average_loss_value'].grid(row=10, column=1, pady=5, padx=10, sticky="w")
 
    return labels
 
