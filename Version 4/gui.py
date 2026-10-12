@@ -169,6 +169,13 @@ def create_statistics_frame():
    labels['average_win_value'] = tk.Label(stats_frame, text=0)
    labels['average_win_value'].grid(row=9, column=1, pady=5, padx=10, sticky="w")
 
+   # Average Loss
+   average_loss = tk.Label(stats_frame, text="Average Loss: ")
+   average_loss.grid(row=10, column=0, pady=5, padx=10, sticky="w")
+
+   labels['average_loss_value'] = tk.Label(stats_frame, text=0)
+   labels['average_loss_value'].grid(row=10, pady=5, padx=10, sticky="w")
+
    return labels
 
 stats_labels = create_statistics_frame()
@@ -185,6 +192,7 @@ def update_statistics(metrics):
    stats_labels['gross_profit_value'].config(text=f"${metrics['gross_profit']:.2f}")
    stats_labels['gross_loss_value'].config(text=f"${metrics['gross_loss']:.2f}")
    stats_labels['average_win_value'].config(text=f"{metrics['average_win_value']:.2f}")
+   stats_labels['average_loss_value'].config(text=f"{metrics['average_loss_value']:.2f}")
 
 def clear_statistics():
    pass
