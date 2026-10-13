@@ -211,6 +211,13 @@ def create_statistics_frame():
    labels['total_winning_profit_value'] = tk.Label(stats_frame, text="$0")
    labels['total_winning_profit_value'].grid(row=15, column=1, pady=5, padx=10, sticky="w")
 
+   # Total Losing Profit
+   total_losing_profit = tk.Label(stats_frame, text="Total Losing Profit: ")
+   total_losing_profit.grid(row=16, column=0, padx=10, pady=5, sticky="w")
+
+   labels['total_losing_profit_value'] = tk.Label(stats_frame, text="$0")
+   labels['total_losing_profit_value'].grid(row=16, column=1, pady=5, padx=10, sticky="w")
+
 
    return labels
 
@@ -234,6 +241,7 @@ def update_statistics(metrics):
    stats_labels['longest_win_streak_value'].config(text=f"{metrics['longest_win_streak']}")
    stats_labels['longest_loss_streak_value'].config(text=f"{metrics['longest_loss_streak']}")
    stats_labels['total_winning_profit_value'].config(text=f"${metrics['total_winning_profit']:.2f}")
+   stats_labels['total_losing_profit_value'].config(text=f"${metrics['total_losing_profit']:.2f}")
 
 def clear_statistics():
    pass
