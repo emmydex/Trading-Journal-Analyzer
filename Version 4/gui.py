@@ -190,6 +190,13 @@ def create_statistics_frame():
    labels['current_loss_streak_value'] = tk.Label(stats_frame, text="0")
    labels['current_loss_streak_value'].grid(row=12, column=1, pady=5, padx=10, sticky="w")
 
+   # Longest Win Streak
+   longest_win_streak = tk.Label(stats_frame, text="Longest Win Streak: ")
+   longest_win_streak.grid(row=13, column=0, pady=5, padx=10, sticky="w")
+
+   labels['longest_win_streak_value'](stats_frame, text="0")
+   labels['longest_win_streak_value'].grid(row=13, column=1, pady=5, padx=10, sticky="w")
+
 
    return labels
 
@@ -210,6 +217,7 @@ def update_statistics(metrics):
    stats_labels['average_loss_value'].config(text=f"{metrics['average_loss']:.2f}")
    stats_labels['current_win_streak_value'].config(text=f"{metrics['current_win_streak']}")
    stats_labels['current_loss_streak_value'].config(text=f"{metrics['current_loss_streak']}")
+   stats_labels['longest_win_streak_value'].config(text=f"{metrics['longest_win_streak']}")
 
 def clear_statistics():
    pass
