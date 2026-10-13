@@ -183,6 +183,13 @@ def create_statistics_frame():
    labels['current_win_streak_value'] = tk.Label(stats_frame, text="0")
    labels['current_win_streak_value'].grid(row=11, column=1, pady=5, padx=10, sticky="w")
 
+   # Current Loss Streak
+   current_loss_streak = tk.Label(stats_frame, text="Current Loss Streak: ")
+   current_loss_streak.grid(row=11, column=0, pady=5, padx=10, sticky="w")
+
+   labels['current_loss_streak_value'] = tk.Label(stats_frame, text="0")
+   labels['current_loss_streak_value'].grid(row=11, column=1, pady=5, padx=10, sticky="w")
+
 
    return labels
 
@@ -202,6 +209,7 @@ def update_statistics(metrics):
    stats_labels['average_win_value'].config(text=f"{metrics['average_win']:.2f}")
    stats_labels['average_loss_value'].config(text=f"{metrics['average_loss']:.2f}")
    stats_labels['current_win_streak_value'].config(text=f"{metrics['current_win_streak']}")
+   stats_labels['current_loss_streak_value'].config(text=f"{metrics['current_loss_streak']}")
 
 def clear_statistics():
    pass
