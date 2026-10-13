@@ -233,7 +233,7 @@ def update_statistics(metrics):
    stats_labels['current_loss_streak_value'].config(text=f"{metrics['current_loss_streak']}")
    stats_labels['longest_win_streak_value'].config(text=f"{metrics['longest_win_streak']}")
    stats_labels['longest_loss_streak_value'].config(text=f"{metrics['longest_loss_streak']}")
-   stats_labels['total_winning_profit_value'].config(text=f"${metrics['total_winning_profit_value']:.2f}")
+   stats_labels['total_winning_profit_value'].config(text=f"${metrics['total_winning_profit']:.2f}")
 
 def clear_statistics():
    pass
