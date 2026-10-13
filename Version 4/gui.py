@@ -194,7 +194,7 @@ def create_statistics_frame():
    longest_win_streak = tk.Label(stats_frame, text="Longest Win Streak: ")
    longest_win_streak.grid(row=13, column=0, pady=5, padx=10, sticky="w")
 
-   labels['longest_win_streak_value'](stats_frame, text="0")
+   labels['longest_win_streak_value']= tk.Label(stats_frame, text="0")
    labels['longest_win_streak_value'].grid(row=13, column=1, pady=5, padx=10, sticky="w")
 
 
