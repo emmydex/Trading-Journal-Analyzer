@@ -185,10 +185,10 @@ def create_statistics_frame():
 
    # Current Loss Streak
    current_loss_streak = tk.Label(stats_frame, text="Current Loss Streak: ")
-   current_loss_streak.grid(row=11, column=0, pady=5, padx=10, sticky="w")
+   current_loss_streak.grid(row=12, column=0, pady=5, padx=10, sticky="w")
 
    labels['current_loss_streak_value'] = tk.Label(stats_frame, text="0")
-   labels['current_loss_streak_value'].grid(row=11, column=1, pady=5, padx=10, sticky="w")
+   labels['current_loss_streak_value'].grid(row=12, column=1, pady=5, padx=10, sticky="w")
 
 
    return labels
