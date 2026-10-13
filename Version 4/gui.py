@@ -208,8 +208,8 @@ def create_statistics_frame():
    total_winning_profit = tk.Label(stats_frame, text="Total Winning Profit: ")
    total_winning_profit.grid(row=15, column=0, padx=10, pady=5, sticky="w")
 
-   labels['total_winning_profit_value'] = tk.Label(stats_frame, text="0")
-   labels['total_winning_profit_value'].grid(row=14, column=1, pady=5, padx=10, sticky="w")
+   labels['total_winning_profit_value'] = tk.Label(stats_frame, text="$0")
+   labels['total_winning_profit_value'].grid(row=15, column=1, pady=5, padx=10, sticky="w")
 
 
    return labels
