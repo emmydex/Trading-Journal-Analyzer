@@ -14,7 +14,7 @@ window = tk.Tk()
 #created the title
 window.title("Trading Journal Analyzer V1")
 #set the window size
-window.geometry("700x600")
+window.geometry("700x1000")
 
 
 # function for the top frame
