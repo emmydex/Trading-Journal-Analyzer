@@ -219,11 +219,11 @@ def create_statistics_frame():
    labels['total_losing_profit_value'].grid(row=16, column=1, pady=5, padx=10, sticky="w")
 
    # Best Trade
-   best_trade = tk.label(stats_frame, text="Best Trade: ")
+   best_trade = tk.Label(stats_frame, text="Best Trade: ")
    best_trade.grid(grid=17, column=0, pady=5, padx=10, sticky="w")
 
    labels['best_trade_value'] = tk.Label(stats_frame, text="0")
-   labels['best_tade_value'].grid(row=17, column=1,pady=5, padx=10, sticky="w")
+   labels['best_tade_value'].grid(row=17, column=1, pady=5, padx=10, sticky="w")
 
 
    return labels
