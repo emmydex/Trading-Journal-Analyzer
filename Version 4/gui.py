@@ -220,7 +220,7 @@ def create_statistics_frame():
 
    # Best Trade
    best_trade = tk.Label(stats_frame, text="Best Trade: ")
-   best_trade.grid(grid=17, column=0, pady=5, padx=10, sticky="w")
+   best_trade.grid(row=17, column=0, pady=5, padx=10, sticky="w")
 
    labels['best_trade_value'] = tk.Label(stats_frame, text="0")
    labels['best_tade_value'].grid(row=17, column=1, pady=5, padx=10, sticky="w")
