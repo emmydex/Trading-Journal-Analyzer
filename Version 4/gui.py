@@ -225,6 +225,13 @@ def create_statistics_frame():
    labels['best_trade_value'] = tk.Label(stats_frame, text="0")
    labels['best_trade_value'].grid(row=17, column=1, pady=5, padx=10, sticky="w")
 
+   # Worst Trade 
+   worst_trade = tk.Label(stats_frame, text="worst_trade: ")
+   worst_trade.grid(row=18, column=0, padx=10, pady=5, sticky="w")
+
+   labels['worst_trade_value'] = tk.Label(stats_frame, text="0")
+   labels['worst_trade_value'].grid(row=18, column=1, pady=5, padx=10, sticky="w")
+
 
    return labels
 
@@ -249,7 +256,8 @@ def update_statistics(metrics):
    stats_labels['longest_loss_streak_value'].config(text=f"{metrics['longest_loss_streak']}")
    stats_labels['total_winning_profit_value'].config(text=f"${metrics['total_winning_profit']:.2f}")
    stats_labels['total_losing_profit_value'].config(text=f"${metrics['total_losing_profit']:.2f}")
-   stats_labels['best_trade_value'].config(text=f"{metrics['best_trade']}")
+   stats_labels['best_trade_value'].config(text=f"{metrics['best_trade']}") # the format i need to do will have something to do with {metrics['best_trade]}
+   stats_labels['worst_trade_value'].config(text=f"{metrics['worst_trade']}")
 
 def clear_statistics():
    pass
