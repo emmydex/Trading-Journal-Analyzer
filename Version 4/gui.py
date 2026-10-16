@@ -69,8 +69,6 @@ def create_button_frame():
    import_button.pack(side="left")
 
 
-
-
    # function for the analyze_button
    def analyze():
       trades = csv_loader.load_trades(file_browse)
@@ -78,15 +76,21 @@ def create_button_frame():
 
       update_statistics(metrics)
 
-      
-
    #Analyze Button
    analyze_button = tk.Button(button_frame, text="Analyze", command=analyze)
    analyze_button.pack(side="left")
 
+expression = ""
+
+# def clear():
+#     global expression
+#     expression = ""
+#     display.set("0")  # reset the display widget   
+
+
    # clear button
-   clear_button = tk.Button(button_frame, text="Clear")
-   clear_button.pack(side="left")
+clear_button = tk.Button(button_frame, text="Clear")
+clear_button.pack(side="left")
 
 create_button_frame()
 
@@ -101,7 +105,6 @@ def create_statistics_frame():
    #Total Trades:       0
    total_trades = tk.Label(stats_frame, text="Total Trades: ")
    total_trades.grid(row=0, column=0, pady=5, padx=10, sticky="w")
-
    labels['total_trades_value']= tk.Label(stats_frame, text="0")
    labels['total_trades_value'].grid(row=0, column=1,  pady=5, padx=10, sticky="w")
 
@@ -109,133 +112,114 @@ def create_statistics_frame():
    #Winning Trades:     0
    winning_trades = tk.Label(stats_frame, text="Winning Trades: ")
    winning_trades.grid(row=1, column=0,  pady=5, padx=10, sticky="w")
-   
    labels['winning_trades_value'] = tk.Label(stats_frame, text="0")
    labels['winning_trades_value'].grid(row=1, column=1,  pady=5, padx=10, sticky="w")
 
    #Losing Trades:      0
    losing_trades = tk.Label(stats_frame, text="Losing Trades: ")
    losing_trades.grid(row=2, column=0,  pady=5, padx=10, sticky="w")
-
    labels['losing_trades_value'] = tk.Label(stats_frame, text="0")
    labels['losing_trades_value'].grid(row=2, column=1,  pady=5, padx=10, sticky="w")
 
    #Breakeven Trades:   0
    breakeven_trades = tk.Label(stats_frame, text="BreakEven Trades: ")
    breakeven_trades.grid(row=3, column=0,  pady=5, padx=10, sticky="w")
-
    labels['breakeven_trades_value'] = tk.Label(stats_frame, text="0")
    labels['breakeven_trades_value'].grid(row=3, column=1,  pady=5, padx=10, sticky="w")
 
    #Win Rate:           0%
    win_rate = tk.Label(stats_frame, text="Win Rate: ")
    win_rate.grid(row=4, column=0,  pady=5, padx=10, sticky="w")
-
    labels['win_rate_value'] = tk.Label(stats_frame, text="0%")
    labels['win_rate_value'].grid(row=4, column=1,  pady=5, padx=10, sticky="w")
 
    #Total Profit:       $0
    total_profit = tk.Label(stats_frame, text="Total Profit: ")
    total_profit.grid(row=5, column=0,  pady=5, padx=10, sticky="w")
-
    labels['total_profit_value'] = tk.Label(stats_frame, text="$0")
    labels['total_profit_value'].grid(row=5, column=1,  pady=5, padx=10, sticky="w")
 
    #Average Profit:     $0
    average_profit = tk.Label(stats_frame, text="Average Profit: ")
    average_profit.grid(row=6, column=0,  pady=5, padx=10, sticky="w")
-
    labels['average_profit_value'] = tk.Label(stats_frame, text="$0")
    labels['average_profit_value'].grid(row=6, column=1,  pady=5, padx=10, sticky="w")
 
    # Gross Profit
    gross_profit = tk.Label(stats_frame, text="Gross Profit: ")
    gross_profit.grid(row=7, column=0, pady=5, padx=10, sticky="w")
-
    labels['gross_profit_value'] = tk.Label(stats_frame, text="$0")
    labels['gross_profit_value'].grid(row=7, column=1, pady=5, padx=10, sticky="w")
 
    # Gross loss
    gross_loss = tk.Label(stats_frame, text="Gross loss: ")
    gross_loss.grid(row=8,column=0, pady=5, padx=10, sticky="w")
-
    labels['gross_loss_value'] = tk.Label(stats_frame, text="$0")
    labels['gross_loss_value'].grid(row=8, column=1, pady=5, padx=10, sticky="w")
 
    # Average Win
    average_win = tk.Label(stats_frame, text="Average Win: ")
    average_win.grid(row=9, column=0, pady=5, padx=10, sticky="w")
-
    labels['average_win_value'] = tk.Label(stats_frame, text=0)
    labels['average_win_value'].grid(row=9, column=1, pady=5, padx=10, sticky="w")
 
    # Average Loss
    average_loss = tk.Label(stats_frame, text="Average Loss: ")
    average_loss.grid(row=10, column=0, pady=5, padx=10, sticky="w")
-
    labels['average_loss_value'] = tk.Label(stats_frame, text=0)
    labels['average_loss_value'].grid(row=10, column=1, pady=5, padx=10, sticky="w")
 
    # Current Win Streak
    current_win_streak = tk.Label(stats_frame, text="Current Win Streak: ")
    current_win_streak.grid(row=11, column=0, pady=5, padx=10, sticky="w")
-
    labels['current_win_streak_value'] = tk.Label(stats_frame, text="0")
    labels['current_win_streak_value'].grid(row=11, column=1, pady=5, padx=10, sticky="w")
 
    # Current Loss Streak
    current_loss_streak = tk.Label(stats_frame, text="Current Loss Streak: ")
    current_loss_streak.grid(row=12, column=0, pady=5, padx=10, sticky="w")
-
    labels['current_loss_streak_value'] = tk.Label(stats_frame, text="0")
    labels['current_loss_streak_value'].grid(row=12, column=1, pady=5, padx=10, sticky="w")
 
    # Longest Win Streak
    longest_win_streak = tk.Label(stats_frame, text="Longest Win Streak: ")
    longest_win_streak.grid(row=13, column=0, pady=5, padx=10, sticky="w")
-
    labels['longest_win_streak_value']= tk.Label(stats_frame, text="0")
    labels['longest_win_streak_value'].grid(row=13, column=1, pady=5, padx=10, sticky="w")
 
    # Longest Loss Streak
    longest_loss_streak = tk.Label(stats_frame, text="Longest Loss Streak: ")
    longest_loss_streak.grid(row=14, column=0, pady=5, padx=10, sticky="w")
-
    labels['longest_loss_streak_value'] = tk.Label(stats_frame, text="0")
    labels['longest_loss_streak_value'].grid(row=14, column=1, padx=10, pady=5, sticky="w")
 
    # Total Winning Profit
    total_winning_profit = tk.Label(stats_frame, text="Total Winning Profit: ")
    total_winning_profit.grid(row=15, column=0, padx=10, pady=5, sticky="w")
-
    labels['total_winning_profit_value'] = tk.Label(stats_frame, text="$0")
    labels['total_winning_profit_value'].grid(row=15, column=1, pady=5, padx=10, sticky="w")
 
    # Total Losing Profit
    total_losing_profit = tk.Label(stats_frame, text="Total Losing Profit: ")
    total_losing_profit.grid(row=16, column=0, padx=10, pady=5, sticky="w")
-
    labels['total_losing_profit_value'] = tk.Label(stats_frame, text="$0")
    labels['total_losing_profit_value'].grid(row=16, column=1, pady=5, padx=10, sticky="w")
 
    # Best Trade
    best_trade = tk.Label(stats_frame, text="Best Trade: ")
    best_trade.grid(row=17, column=0, pady=5, padx=10, sticky="w")
-
    labels['best_trade_value'] = tk.Label(stats_frame, text="0")
    labels['best_trade_value'].grid(row=17, column=1, pady=5, padx=10, sticky="w")
 
    # Worst Trade 
    worst_trade = tk.Label(stats_frame, text="worst_trade: ")
    worst_trade.grid(row=18, column=0, padx=10, pady=5, sticky="w")
-
    labels['worst_trade_value'] = tk.Label(stats_frame, text="0")
    labels['worst_trade_value'].grid(row=18, column=1, pady=5, padx=10, sticky="w")
 
    # Profit Factor
    profit_factor = tk.Label(stats_frame, text="Profit Factor")
    profit_factor.grid(row=19, column=0, pady=5, padx=10, sticky="w")
-
    labels['profit_factor_value'] = tk.Label(stats_frame, text="0%")
    labels['profit_factor_value'].grid(row=19, column=1, padx=10, pady=5, sticky="w")
 
